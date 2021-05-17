@@ -1,0 +1,53 @@
+/*not_binary_tuple*/
+sc_node_not_binary_tuple
+->..some_name;
+->..some_name1;;
+
+/*defenition*/
+concept_types_of_edged_weapon_by_appointment <-rrel_key_sc_element:...
+    (*
+		<-definition;;
+		=>nrel_main_idtf:
+			[Опр. Типы холодного оружия по назначению] 
+	(*
+		->rrel_example:[Типы холодного оружия по назначению — это типы холодного
+		оружия в зависимости от его цели применения.]
+		(* <- lang_ru;; *);;
+	*);;
+		=>nrel_using_constants:..some_name
+	(*
+		->concept_edged_weapon;;
+		->concept_aim;;
+	*);;
+	*);;
+
+/*statement*/
+concept_types_of_edged_weapon_by_appointment <-rrel_key_sc_element:...
+	(*
+		<-statement;;
+		=>nrel_main_idtf:[Утв. Типы холодного оружия по назначению](* <- lang_ru;; *);;
+		=>nrel_using_constants:..some_name1
+	(*
+	 	->concept_sportig_edged_weapon;;
+		->concept_civil_edged_wepon;;
+		->concept_hunting_edged_weapon;;
+		->concept_combat_edged_weapon;;
+	*);;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Типы холодного оружия по назначению: антикварное, боевое, гражданское,
+		охотничие, спортивное холодное оружие.]
+	(*
+		<-lang_ru;; 
+	*);;	
+	*);;
+	*);;
+
+/*example*/
+concept_types_of_edged_weapon_by_appointment => nrel_inclusion: concept_antique_edged_weapon;;
+concept_types_of_edged_weapon_by_appointment => nrel_inclusion: concept_combat_edged_weapon;;
+concept_types_of_edged_weapon_by_appointment => nrel_inclusion: concept_civil_edged_weapon;;
+concept_types_of_edged_weapon_by_appointment => nrel_inclusion: concept_hunting_edged_weapon;;
+concept_types_of_edged_weapon_by_appointment => nrel_inclusion: concept_sportig_edged_weapon;;
+
+

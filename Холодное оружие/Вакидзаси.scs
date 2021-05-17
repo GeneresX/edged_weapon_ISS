@@ -1,0 +1,90 @@
+/*nrel*/
+sc_node_not_binary_tuple
+->..some_name;
+->..some_name1;;
+
+sc_node_not_relation
+->..some_name4;;
+
+/*defenition*/
+concept_vakidzasi <-rrel_key_sc_element:...
+    (*
+		<-definition;;
+		=>nrel_main_idtf:
+			[Опр. Вакидзаси] 
+	(* 
+		<-lang_ru;;
+	*);;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Вакидзаси — короткий японский меч. В отличае от катаны, мог использоватся простыми купцами для 
+		самообороны. Самураи носили сразу пару мечей – вакидзаси с катаной, это называлось дайсё. При этом вакидзаси самурай всегда
+		носил с собой.]
+		(* <- lang_ru;; *);;
+	*);;
+		=>nrel_using_constants:..some_name
+	(*
+		->concept_self_defence;;
+		->concept_katana;;
+		->concept_short_japanes_sword;;
+		->concept_samurai;;
+		->concept_merchants;;
+		->concept_daisho;;
+		->concept_pare_of_swords;;
+	*);;
+	*);;
+
+/*statement*/
+concept_vakidzasi <-rrel_key_sc_element:...
+	(*
+		<-statement;;
+		=>nrel_main_idtf:[Утв. Основные парметры вакидзаси](* <- lang_ru;; *);;
+		=>nrel_using_constants:..some_name1
+	(*
+		-> concept_60.6_cm;;
+		-> concept_30.3_cm;;
+		->concept_piercingcutting_edged_weapon;;
+	*);;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Вакидзаси является колюще-режущим холодным оружием. Общая длина 
+		вакидзаси могла составлять от 30,3 см до 60,6 см.]
+	(*
+		<-lang_ru;; 
+	*);;	
+	*);;
+	*);;
+
+/*измерения*/
+concept_approximate_value 
+-> concept_60.6_cm;
+-> concept_30.3_cm;;
+
+/*материалы, размеры, вес, способ действия, части*/
+concept_vakidzasi -> ...
+(*
+	<-..some_name4
+	(*
+		<-concept_everage_lenght
+		(*
+			<-concept_lenght;;
+		*);;
+		<-concept_interval;;
+	*);;
+	<-concept_piercingcutting_edged_weapon;;
+*);;
+
+nrel_measurement -> ( ..some_name4 => (concept_30.3_cm <=> concept_60.6_cm));;
+
+/*picture*/
+concept_vakidzasi <-rrel_key_sc_element:...
+(*
+    <-illustration;;
+    =>nrel_main_idtf:
+    [Избр. Пример вакидзаси)](*<-lang_ru;;*);;
+    <=nrel_sc_text_translation:...
+        (*
+        ->"file://pictures/vakidzasi.jpg"(*=>nrel_format:format_jpg;;*);;
+        *);;
+*);;
+

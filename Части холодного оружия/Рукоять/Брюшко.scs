@@ -1,0 +1,36 @@
+/*nrel*/
+sc_node_not_binary_tuple
+->..some_name;;
+
+/*defenition*/
+concept_abdomen <-rrel_key_sc_element:...
+    (*
+		<-definition;;
+		=>nrel_main_idtf:
+			[Опр. Брюшко] 
+	(* 
+		<-lang_ru;;
+	*);;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Брюшко — часть рукояти со стороны лезвия.]
+		(* <- lang_ru;; *);;
+	*);;
+		=>nrel_using_constants:..some_name
+	(*
+		->concept_handle;;
+		->concept_edge;;
+	*);;
+	*);;
+
+/*picture*/
+concept_abdomen <-rrel_key_sc_element:...
+(*
+    <-illustration;;
+    =>nrel_main_idtf:
+    [(Избр. Брюшко)](*<-lang_ru;;*);;
+    <=nrel_sc_text_translation:...
+	(*
+        ->"file://pictures/abdomen.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;

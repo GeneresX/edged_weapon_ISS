@@ -1,0 +1,54 @@
+/*not_binary_tuple*/
+sc_node_not_binary_tuple
+->..some_name;
+->..some_name2;
+->..some_name1;;
+
+/*defenition*/
+concept_manufacturing_methods <-rrel_key_sc_element:...
+    (*
+		<-definition;;
+		=>nrel_main_idtf:
+			[Опр. Способ изготовления холодного оружия] 
+	(*
+		->rrel_example: [Способ изготовления холодного оружия – это способ,
+		которым было изготовлено холодное оружие.]
+		(* <- lang_ru;; *);;
+	*);;
+		=>nrel_using_constants:..some_name
+	(*
+		->concept_edged_weapon;;
+		->concept_method;;
+	*);;
+	*);;
+
+/*statemant*/
+concept_manufacturing_methods <-rrel_key_sc_element:...
+	(*
+		<-statement;;
+		=>nrel_main_idtf:[Утв. Способ изготовления холодного оружия](* <- lang_ru;; *);;
+		=>nrel_using_constants:..some_name1
+	(*
+		->concept_factory_method;;
+		->concept_nonfactory_method;;
+	*);;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: [Способ изготовления холодного оружия делится на фабричный и нефабричный 
+		способы изготовления.]
+	(*
+		<-lang_ru;; 
+	*);;	
+	*);;
+	*);;
+
+/*inclusion*/
+concept_manufacturing_methods <=nrel_inclusion: concept_method;;
+
+/*example*/
+concept_manufacturing_methods <= nrel_decomposition: ..some_name2
+(*
+	->concept_factory_method;;
+	->concept_nonfactory_method;;
+*);;
+

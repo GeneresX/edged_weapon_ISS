@@ -1,0 +1,22 @@
+/*not_binary_tuple*/
+sc_node_not_binary_tuple
+->..some_name;;
+
+/*defenition*/
+concept_civil_edged_weapon <-rrel_key_sc_element:...
+    (*
+		<-definition;;
+		=>nrel_main_idtf:
+			[Опр. Граждансокое холодное оружие] 
+	(*
+		->rrel_example:[Граждансокое холодное оружие — это холодное оружие предназначеное
+		для использования гражданами с целью самообороны.]
+		(* <- lang_ru;; *);;
+	*);;
+		=>nrel_using_constants:..some_name
+	(*
+		->concept_edged_weapon;;
+		->concept_citizens;;
+		->concept_self_defence;;
+	*);;
+	*);;

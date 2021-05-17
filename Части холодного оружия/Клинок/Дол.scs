@@ -1,0 +1,38 @@
+/*nrel*/
+sc_node_not_binary_tuple
+->..some_name;;
+
+/*defenition*/
+concept_fuller  <-rrel_key_sc_element:...
+    (*
+		<-definition;;
+		=>nrel_main_idtf:
+			[Опр. Дол] 
+	(* 
+		<-lang_ru;;
+	*);;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Дол — часть клинка облегчающаяя его общий вес, 
+		при этом сохраняя его прочность.]
+		(* <- lang_ru;; *);;
+	*);;
+		=>nrel_using_constants:..some_name
+	(*
+		->concept_blade;;
+		->concept_average_weight;;
+		->concept_strength;;
+	*);;
+	*);;
+
+/*picture*/
+concept_fuller  <-rrel_key_sc_element:...
+(*
+    <-illustration;;
+    =>nrel_main_idtf:
+    [(Избр. Дол)](*<-lang_ru;;*);;
+    <=nrel_sc_text_translation:...
+	(*
+        ->"file://pictures/fuller.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;

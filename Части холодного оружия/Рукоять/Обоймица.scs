@@ -1,0 +1,36 @@
+/*nrel*/
+sc_node_not_binary_tuple
+->..some_name;;
+
+/*defenition*/
+concept_cage <-rrel_key_sc_element:...
+    (*
+		<-definition;;
+		=>nrel_main_idtf:
+			[Опр. Обоймица] 
+	(* 
+		<-lang_ru;;
+	*);;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Обоймица — специальное кольцо на рукояти.]
+		(* <- lang_ru;; *);;
+	*);;
+		=>nrel_using_constants:..some_name
+	(*
+		->concept_ring;;
+		->concept_handle;;
+	*);;
+	*);;
+
+/*picture*/
+concept_cage <-rrel_key_sc_element:...
+(*
+    <-illustration;;
+    =>nrel_main_idtf:
+    [(Избр. Обоймица)](*<-lang_ru;;*);;
+    <=nrel_sc_text_translation:...
+	(*
+        ->"file://pictures/cage.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;

@@ -1,0 +1,106 @@
+/*nrel*/
+sc_node_not_binary_tuple
+->..some_name;
+->..some_name2;
+->..some_name1;;
+
+/*defenition*/
+concept_edged_weapon <-rrel_key_sc_element:...
+    (*
+		<-definition;;
+		=>nrel_main_idtf:
+			[Опр. холодное оружие] 
+	(* 
+		<-lang_ru;;
+	*);;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Холодное оружие — оружие, 
+		предназначенное для поражения цели 
+		при помощи мускульной силы человека.]
+		(* <- lang_ru;; *);;
+	*);;
+		=>nrel_using_constants:..some_name
+	(*
+		->concept_weapon;;
+		->concept_aim;;
+		->concept_muscle_power;;
+	*);;
+	*);;
+
+/*statement*/
+concept_edged_weapon <-rrel_key_sc_element:...
+	(*
+		<-statement;;
+		=>nrel_main_idtf:[Утв. Холодное оружие](* <- lang_ru;; *);;
+		=>nrel_using_constants:..some_name1
+	(*
+	 	->concept_principle_of_action_of_edged_weapon;;
+		->concept_types_of_edged_weapon_by_appointment;;
+		->concept_bayonet_knife;;
+		->concept_weapon;;
+		->concept_sword;;
+		->concept_rapier;;
+		->concept_saber;;
+		->concept_spear;;
+		->concept_knife;;
+		->concept_backsword;;
+		->concept_stylet;;
+		->concept_katana;;
+		->concept_baton;;
+		->concept_telescopic_baton;;
+		->concept_tonfu;;
+		->concept_kubotan;;
+		->concept_mace;;
+		->concept_brass_knuckles;;
+		->concept_sai;;
+		->concept_cossacks_sword;;
+		->concept_scottish_sword;;
+		->concept_small_katana;;
+		->concept_machete;;
+		->concept_ax;;
+	*);;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Холодное оружие может быть классифицировано по назначению, поражающему действию. К холодному оружию
+		относят булаву, вакидзаси, кастет, катану, копье, куботан, мачете, нож, палаш, полицейскую дубинку, рапиру,
+		саблю, саи, стилет, телескопическую дубинку, тесак, тонфу, топор, шашку, шпагу и штык- нож.]
+	(*
+		<-lang_ru;; 
+	*);;	
+	*);;
+	*);;
+
+/*inclusion*/
+concept_edged_weapon <= nrel_inclusion: concept_weapon;;
+
+/*example*/
+concept_edged_weapon => nrel_inclusion: concept_types_of_edged_weapon_by_appointment;;
+concept_edged_weapon => nrel_inclusion: concept_principle_of_action_of_edged_weapon;;
+concept_edged_weapon <= nrel_decomposition: ..some_name2
+(*
+	->concept_bayonet_knife;;
+	->concept_weapon;;
+	->concept_sword;;
+	->concept_rapier;;
+	->concept_saber;;
+	->concept_spear;;
+	->concept_knife;;
+	->concept_backsword;;
+	->concept_stylet;;
+	->concept_katana;;
+	->concept_baton;;
+	->concept_telescopic_baton;;
+	->concept_tonfu;;
+	->concept_kubotan;;
+	->concept_mace;;
+	->concept_brass_knuckles;;
+	->concept_sai;;
+	->concept_cossacks_sword;;
+	->concept_scottish_sword;;
+	->concept_small_katana;;
+	->concept_machete;;
+	->concept_ax;;
+*);;
+
+

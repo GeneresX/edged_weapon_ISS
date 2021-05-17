@@ -1,0 +1,37 @@
+/*nrel*/
+sc_node_not_binary_tuple
+->..some_name;
+->..some_name1;;
+
+sc_node_not_relation
+->..some_name4;
+->..some_name5;
+->..some_name6;;
+
+/*defenition*/
+concept_metal <-rrel_key_sc_element:...
+    (*
+		<-definition;;
+		=>nrel_main_idtf:
+			[Опр. Металл] 
+	(* 
+		<-lang_ru;;
+	*);;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Металл — простое вещество или сплав, обладающее блеском, ковкостью, 
+		электропроводностью и теплоемкостью.]
+		(* <- lang_ru;; *);;
+	*);;
+		=>nrel_using_constants:..some_name
+	(*
+		->concept_simple_substance;;
+		->concept_alloy;;
+		->concept_shine;;
+		->concept_ductility;;
+		->concept_electrical_conductivity;;
+		->concept_heat_capacity;;
+	*);;
+	*);;
+
+

@@ -1,0 +1,130 @@
+/*nrel*/
+sc_node_not_binary_tuple
+->..some_name;
+->..some_name1;
+->..some_name2;;
+
+sc_node_not_relation
+->..some_name4;
+->..some_name5;
+->..some_name6;;
+
+/*defenition*/
+concept_mace <-rrel_key_sc_element:...
+    (*
+		<-definition;;
+		=>nrel_main_idtf:
+			[Опр. Булава] 
+	(* 
+		<-lang_ru;;
+	*);;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Булава — дробящее холодное оружие в виде рукояти с шаровидной частью - навершием.]
+		(* <- lang_ru;; *);;
+	*);;
+		=>nrel_using_constants:..some_name
+	(*
+		->concept_edged_weapon;;
+		->concept_crushing_edged_weapon;;
+		->conecpt_handle;;
+  		->concept_pommel;;
+	*);;
+	*);;
+
+/*statement*/
+concept_mace <-rrel_key_sc_element:...
+	(*
+		<-statement;;
+		=>nrel_main_idtf:[Утв. Основные парметры булавы](* <- lang_ru;; *);;
+		=>nrel_using_constants:..some_name1
+	(*
+	 	->concept_approximate_value;;
+		->concept_200_grams;;
+		->concept_300_grams;;
+		->concept_weight;;
+		->concept_interval;;
+		->concept_handle;;
+		->concept_pommel;;
+		->concept_ball_mace;;
+		->concept_ball_shaped_mace;;
+		->concept_round_mace;;
+	*);;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Булава состоит из навершия и рукояти. Рукоять была деревянной, навершие изготавливалось 
+		из твердого материала. Длина рукояти булавы состовляет порядка 50–80 см, диаметр навершия – 5–8 см в 
+		диаметре, а его вес – 200–800 грамм. Булава бывает шаровидной, шарообразной или круглая.]
+	(*
+		<-lang_ru;; 
+	*);;	
+	*);;
+	*);;
+
+/*измерения*/
+concept_approximate_value 
+-> concept_200_grams;
+-> concept_300_grams;
+-> concept_5_cm;
+-> concept_8_cm;
+-> concept_50_cm;
+-> concept_80_cm;;
+
+
+/*материалы, размеры, вес, способ действия, части*/
+concept_mace -> ...
+(*
+	<-..some_name4
+	(*
+		<-concept_weight;;
+		<-concept_interval;;
+	*);;
+	=>nrel_part: ...
+	(*
+		<=nrel_material_of_manufacture:concept_hard_material;;
+		<-concept_pommel;;
+		<-..some_name5
+		(*
+			<-concept_diameter;;
+			<-concept_interval;;
+		*);;
+	*);;
+	=>nrel_part: ...
+	(*
+		<-concept_handle;;
+		<-..some_name6
+		(*
+			<=nrel_material_of_manufacture:concept_tree;;
+			<-concept_lenght;;
+			<-concept_interval;;
+		*);;
+	*);;
+	<-concept_crushing_edged_weapon;;
+*);;
+
+nrel_measurement -> ( ..some_name4 => (concept_200_grams <=> concept_300_grams));;
+
+nrel_measurement -> ( ..some_name5 => (concept_5_cm <=> concept_8_cm));;
+
+nrel_measurement -> ( ..some_name6 => (concept_50_cm <=> concept_80_cm));;
+
+/*подтипы булавы*/
+concept_mace <= nrel_decomposition: ..some_name2
+(*
+	->concept_ball_mace;;
+	->concept_ball_shaped_mace;;
+	->concept_round_mace;;
+*);;
+
+/*picture*/
+concept_mace <-rrel_key_sc_element:...
+(*
+    <-illustration;;
+    =>nrel_main_idtf:
+    [(Избр. Пример булавы)](*<-lang_ru;;*);;
+    <=nrel_sc_text_translation:...
+        (*
+        ->"file://pictures/mace.jpg"(*=>nrel_format:format_jpg;;*);;
+        *);;
+*);;
+

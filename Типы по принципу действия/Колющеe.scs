@@ -1,0 +1,21 @@
+/*not_binary_tuple*/
+sc_node_not_binary_tuple
+->..some_name;;
+
+/*defenition*/
+concept_piercing_edged_weapon <-rrel_key_sc_element:...
+    (*
+		<-definition;;
+		=>nrel_main_idtf:
+			[Опр. Колющее холодное оружие] 
+	(*
+		->rrel_example: [Колющее холодное оружие – урон цели наносится с помощью тычковых ударов.]
+		(* <- lang_ru;; *);;
+	*);;
+		=>nrel_using_constants:..some_name
+	(*
+		->concept_aim;;
+		->concept_damage;;
+		->concept_jabs;;
+	*);;
+	*);;

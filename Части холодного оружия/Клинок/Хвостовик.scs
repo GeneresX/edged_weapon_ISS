@@ -1,0 +1,40 @@
+/*nrel*/
+sc_node_not_binary_tuple
+->..some_name;;
+
+/*defenition*/
+concept_shank <-rrel_key_sc_element:...
+    (*
+		<-definition;;
+		=>nrel_main_idtf:
+			[Опр. Обух] 
+	(* 
+		<-lang_ru;;
+	*);;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Обух — часть клинка скрытая в рукояти.]
+		(* <- lang_ru;; *);;
+	*);;
+		=>nrel_using_constants:..some_name
+	(*
+		->concept_edge;;
+	*);;
+	*);;
+
+concept_shank->...
+(*
+	=>nrel_opposite_to: concept_edge;;
+*);;
+
+/*picture*/
+concept_shank <-rrel_key_sc_element:...
+(*
+    <-illustration;;
+    =>nrel_main_idtf:
+    [(Избр. Пример обуха)](*<-lang_ru;;*);;
+    <=nrel_sc_text_translation:...
+	(*
+        ->"file://pictures/shank.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;

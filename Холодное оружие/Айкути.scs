@@ -1,0 +1,104 @@
+/*nrel*/
+sc_node_not_binary_tuple
+->..some_name;
+->..some_name1;;
+
+sc_node_not_relation
+->..some_name4;;
+
+/*defenition*/
+concept_aikuti <-rrel_key_sc_element:...
+    (*
+		<-definition;;
+		=>nrel_main_idtf:
+			[Опр. Айкути] 
+	(* 
+		<-lang_ru;;
+	*);;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Айкути — японский нож, разновидность танто. Отличительной особеностью является 
+		отсуствие гарды (цубы).]
+		(* <- lang_ru;; *);;
+	*);;
+		=>nrel_using_constants:..some_name
+	(*
+		->concept_tanto;;
+		->concept_knife;;
+		->concept_guard;;
+		->concept_tsuba;;
+	*);;
+	*);;
+
+/*statement*/
+concept_aikuti <-rrel_key_sc_element:...
+	(*
+		<-statement;;
+		=>nrel_main_idtf:[Утв. Основные парметры Айкути](* <- lang_ru;; *);;
+		=>nrel_using_constants:..some_name1
+	(*
+		-> concept_less_than_30.3_cm;;
+		-> concept_20_cm;;
+		-> concept_50_cm;;
+
+		->concept_blade;;
+		->concept_handle;;
+		->concept_piercingcutting_edged_weapon;;
+
+		->concept_finishing_off;;
+		->concept_decapitation;;
+		->concept_harakiri;;
+		->concept_knife;;
+	*);;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Айкути является коляще- режущим холодным оружием. Длина клинка айкути была
+		 до 30,3 см, вместе с рукоятью, общая длина составляла порядка 20-50 см.]
+	(*
+		<-lang_ru;; 
+	*);;	
+	*);;
+	*);;
+
+/*измерения*/
+concept_approximate_value 
+-> concept_less_than_30.3_cm;
+-> concept_20_cm;;
+
+/*материалы, размеры, вес, способ действия, части*/
+concept_aikuti -> ...
+(*
+	<-..some_name4
+	(*
+		<-concept_everage_lenght
+		(*
+			<-concept_lenght;;
+		*);;
+		<-concept_interval;;
+	*);;
+	=>nrel_part: ...
+	(*
+		<-concept_blade;;
+		<- concept_less_than_30.3_cm
+		(*
+			<-concept_lenght;;
+		*);;
+	*);;
+
+	<-concept_piercingcutting_edged_weapon;;
+*);;
+
+nrel_measurement -> ( ..some_name4 => (concept_20_cm <=> concept_50_cm));;
+
+/*picture*/
+concept_aikuti <-rrel_key_sc_element:...
+(*
+    <-illustration;;
+    =>nrel_main_idtf:
+    [Избр. Пример Айкути)](*<-lang_ru;;*);;
+    <=nrel_sc_text_translation:...
+        (*
+        ->"file://pictures/aikuti.jpg"(*=>nrel_format:format_jpg;;*);;
+        *);;
+*);;
+

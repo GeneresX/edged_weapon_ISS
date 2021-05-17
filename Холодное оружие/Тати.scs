@@ -1,0 +1,98 @@
+/*nrel*/
+sc_node_not_binary_tuple
+->..some_name;
+->..some_name1;;
+
+sc_node_not_relation
+->..some_name4;;
+
+/*defenition*/
+concept_tati <-rrel_key_sc_element:...
+    (*
+		<- definition;;
+		=> nrel_main_idtf:
+			[Опр. Тати] 
+	(* 
+		<- lang_ru;;
+	*);;
+		<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Тати — японский двуручный меч, который в отличае от катаны не 
+		засовывалась за матерчатый пояс, а подвешивалась на него.]
+		(* <- lang_ru;; *);;
+	*);;
+		=> nrel_using_constants:..some_name
+	(*
+		-> concept_japanes_two_handed_sword;;
+		-> concept_katana;;
+		-> concept_samurai;;
+		-> concept_cloth_belt;;
+	*);;
+	*);;
+
+/*statement*/
+concept_tati <-rrel_key_sc_element:...
+	(*
+		<- statement;;
+		=> nrel_main_idtf:[Утв. Тати](* <- lang_ru;; *);;
+		=> nrel_using_constants:..some_name1
+	(*
+		-> concept_90.9_cm;;
+		-> concept_75.7_cm;;
+		-> concept_samurai;;
+		-> concept_civil_wear;;
+		-> concept_military_armor;;
+		-> concept_katana;;
+		-> concept_blade;;
+	*);;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Тати является рубящим холодным оружием, обычно длиинее и 
+		более изогнутый, чем катана. Длина клинка тати от 75,7 см и до 90,9 см, 
+		рукоять была изогнутой и зачастую длинее 30 см. Самураи носили тати как 
+		часть военных доспехов, а катану как часть гражданской одежды.]
+	(*
+		<- lang_ru;; 
+	*);;	
+	*);;
+	*);;
+
+/*измерения*/
+concept_approximate_value 
+-> concept_90.9_cm;
+-> concept_75.7_cm;;
+
+/*материалы, размеры, вес, способ действия, части*/
+concept_tati -> ...
+(*
+	<-..some_name4
+	(*
+		<-concept_lenght;;
+		<-concept_interval;;
+	*);;
+	=>nrel_part: ...
+	(*
+		<-concept_blade;;
+		<- concept_30.3_cm
+		(*
+			<-concept_lenght;;
+		*);;
+	*);;
+
+	<-concept_piercingcutting_edged_weapon;;
+*);;
+
+nrel_measurement -> ( ..some_name4 => (concept_75.7_cm <=> concept_90.9_cm));;
+
+/*picture*/
+concept_tati <-rrel_key_sc_element:...
+(*
+    <-illustration;;
+    =>nrel_main_idtf:
+    [(Избр. Пример танто)](*<-lang_ru;;*);;
+    <=nrel_sc_text_translation:...
+        (*
+        ->"file://pictures/tati.jpg"(*=>nrel_format:format_jpg;;*);;
+        *);;
+*);;
+

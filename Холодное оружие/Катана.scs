@@ -1,0 +1,139 @@
+/*nrel*/
+sc_node_not_binary_tuple
+->..some_name;
+->..some_name1;;
+
+sc_node_not_relation
+->..some_name4;
+->..some_name5;
+->..some_name6;;
+
+/*defenition*/
+concept_katana <-rrel_key_sc_element:...
+    (*
+		<-definition;;
+		=>nrel_main_idtf:
+			[Опр. Катана] 
+	(* 
+		<-lang_ru;;
+	*);;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Катана — японский меч с изогнутым клинком и прямой рукоятью.]
+		(* <- lang_ru;; *);;
+	*);;
+		=>nrel_using_constants:..some_name
+	(*
+		->concept_japanes_sword;;
+		->concept_blade;;
+		->concept_handle;;
+	*);;
+	*);;
+
+/*statement*/
+concept_katana <-rrel_key_sc_element:...
+	(*
+		<-statement;;
+		=>nrel_main_idtf:[Утв. Основные парметры катаны](* <- lang_ru;; *);;
+		=>nrel_using_constants:..some_name1
+	(*
+		-> concept_1000_grams;;
+		-> concept_750_grams;;
+		-> concept_60.6_cm;;
+		-> concept_75.7_cm;;
+		-> concept_90_cm;;
+		-> concept_100_cm;;
+
+		->concept_blade;;
+		->concept_short_sword;;
+	*);;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Катана является колюще-режущим холодным оружием. Длина клинка катаны состовляет от 
+		60,6 до 75,7 см, длина рукояти порядка 30 см. Общая длина катаны обычно около 90-100 см. Общий вес 
+		катаны 750–1000 грамм. Для обтяжки рукояти применялась обычная кожа, кожа ската. Материал клинка 
+		катаны состоит из двух сортов стали мягкого в сердцевине и твердого в лезвии.]
+	(*
+		<-lang_ru;; 
+	*);;	
+	*);;
+	*);;
+
+/*измерения*/
+concept_approximate_value 
+-> concept_1000_grams;
+-> concept_750_grams;
+-> concept_75.7_cm;
+-> concept_90_cm;
+-> concept_100_cm;
+-> concept_30_cm;;
+
+/*материалы, размеры, вес, способ действия, части*/
+concept_katana -> ...
+(*
+	<-..some_name4
+	(*
+		<-concept_weight;;
+		<-concept_interval;;
+	*);;
+	=>nrel_part: ...
+	(*
+		<-concept_blade;;
+		<-..some_name5
+		(*
+			<-concept_lenght;;
+			<-concept_interval;;
+		*);;
+	*);;
+	<-..some_name6
+	(*
+		<-concept_everage_lenght
+		(*
+			<-concept_lenght;;
+		*);;
+		<-concept_interval;;
+	*);;
+	=>nrel_part: ...
+	(*
+		<-concept_handle;;
+		<=nrel_material_of_tight:...
+		(*
+			<-concept_skat_skin;;
+			<-concept_usual_skin;;
+		*);;
+		<-concept_30_cm
+		(*
+			<-concept_lenght;;
+		*);;
+	*);;
+	=>nrel_part:...
+	(*
+		<-concept_edge;;
+		<=nrel_material_of_manufacture: concept_hard_material;;
+	*);;
+	=>nrel_part:...
+	(*
+		<-concept_core;;
+		<=nrel_material_of_manufacture: concept_soft_material;;
+	*);;
+	<-concept_piercingchopping_edged_weapon;;
+*);;
+
+nrel_measurement -> ( ..some_name4 => (concept_750_grams <=> concept_1000_grams));;
+
+nrel_measurement -> ( ..some_name5 => (concept_60.6_cm <=> concept_75.7_cm));;
+
+nrel_measurement -> ( ..some_name6 => (concept_90_cm <=> concept_100_cm));;
+
+/*picture*/
+concept_katana <-rrel_key_sc_element:...
+(*
+    <-illustration;;
+    =>nrel_main_idtf:
+    [(Избр. Пример катаны)](*<-lang_ru;;*);;
+    <=nrel_sc_text_translation:...
+        (*
+        ->"file://pictures/katana.jpg"(*=>nrel_format:format_jpg;;*);;
+        *);;
+*);;
+

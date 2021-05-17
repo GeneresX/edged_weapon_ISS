@@ -1,0 +1,62 @@
+/*nrel*/
+sc_node_not_binary_tuple
+->..some_name;;
+
+/*defenition*/
+concept_edge <-rrel_key_sc_element:...
+    (*
+		<-definition;;
+		=>nrel_main_idtf:
+			[Опр. Лезвие] 
+	(* 
+		<-lang_ru;;
+	*);;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Лезвие — режущая часть клинка, противоположная обуху.]
+		(* <- lang_ru;; *);;
+	*);;
+		=>nrel_using_constants:..some_name
+	(*
+		->concept_blade;;
+		->concept_back;;
+	*);;
+	*);;
+
+/*statement*/
+concept_edge <- rrel_key_sc_element:...
+	(*
+		<-statement;;
+		=>nrel_main_idtf:[Утв. Материал изготовления лезвия](* <- lang_ru;; *);;
+		=>nrel_using_constants:..some_name1
+	(*
+	 	->concept_hard_material;;
+	*);;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Для изгтовления лезвия используется твердый материал.]
+	(*
+		<-lang_ru;; 
+	*);;	
+	*);;
+	*);;
+
+/*example*/
+concept_edge ->...
+(*
+	<=nrel_material_of_manufacture: concept_hard_material;;
+*);;
+
+/*picture*/
+concept_edge <-rrel_key_sc_element:...
+(*
+    <-illustration;;
+    =>nrel_main_idtf:
+    [(Избр. Лезвие)](*<-lang_ru;;*);;
+    <=nrel_sc_text_translation:...
+	(*
+        ->"file://pictures/edge.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;
+
+

@@ -1,0 +1,823 @@
+/*edged weapon types by appointment*/
+concept_edged_weapon
+=>nrel_main_idtf:
+[Холодное оружие](* <-lang_ru;; *);
+=>nrel_idtf:
+[Edged weapon](* <-lang_en;; *);;
+
+concept_types_of_edged_weapon_by_appointment 
+=>nrel_main_idtf:
+[Типы холодного оружия по назначению](* <-lang_ru;; *);
+=>nrel_idtf:
+[Types of edged weapon by appointment](* <-lang_en;; *);;
+
+concept_edged_weapon_types
+=>nrel_main_idtf:
+[Типы хололдного оружия](* <-lang_ru;; *);;
+
+concept_sporting_edged_weapon
+=>nrel_main_idtf:
+[Спортивное холодное оружие](* <-lang_ru;; *);
+=>nrel_idtf:
+[Sporting edged weapon](*<-lang_en;;*);;
+
+concept_civil_edged_weapon
+=>nrel_main_idtf:
+[Гражданское холодное оружие](* <-lang_ru;; *);
+=>nrel_idtf:
+[Civil edged weapon](* <-lang_en;; *);;
+
+concept_hunting_edged_weapon
+=>nrel_main_idtf:
+[Охотничее холодное оружие](* <-lang_ru;; *);
+=>nrel_idtf:
+[Hunting edged weapon](*<-lang_en;;*);;
+
+concept_combat_edged_weapon
+=>nrel_main_idtf:
+[Боевое холодное оружие](* <-lang_ru;; *);
+=>nrel_idtf:
+[Combat edged weapon](* <-lang_en;; *);;
+
+concept_police_edged_weapon
+=>nrel_main_idtf:
+[Полицейское холодное оружие](* <-lang_ru;; *);
+=>nrel_idtf:
+[Police edged weaepon](* <-lang_en;; *);;
+
+concept_military_edged_weapon 
+=>nrel_main_idtf:
+[Армейское холодное оружие](* <-lang_ru;; *);
+=>nrel_idtf:
+[Military edged weaepon](* <-lang_en;; *);;
+
+
+/*weapon*/
+concept_pare_of_swords
+=>nrel_main_idtf:
+[Пара мечей](* <-lang_ru;; *);;
+
+concept_rapier=>nrel_main_idtf:
+[Рапира](* <-lang_ru;; *);;
+
+concept_weapon=>nrel_main_idtf:
+[Оружие](* <-lang_ru;; *);;
+
+concept_machete=>nrel_main_idtf:
+[Мачетте](* <-lang_ru;; *);;
+
+concept_ax=>nrel_main_idtf:
+[Топор](* <-lang_ru;; *);;
+
+concept_saber=>nrel_main_idtf:
+[Сабля](* <-lang_ru;; *);;
+
+concept_sword=>nrel_main_idtf:
+[Шпага](* <-lang_ru;; *);;
+
+concept_spear=>nrel_main_idtf:
+[Копье](* <-lang_ru;; *);;
+
+concept_knife=>nrel_main_idtf:
+[Нож](* <-lang_ru;; *);;
+
+concept_bayonet_knife=>nrel_main_idtf:
+[Штык- нож](* <-lang_ru;; *);;
+
+concept_backsword=>nrel_main_idtf:
+[Тесак](* <-lang_ru;; *);;
+
+concept_stylet=>nrel_main_idtf:
+[Стилет](* <-lang_ru;; *);;
+
+concept_baton=>nrel_main_idtf:
+[Полицйская дубинка](* <-lang_ru;; *);;
+
+concept_telescopic_baton=>nrel_main_idtf:
+[Телескопическая дубинка](* <-lang_ru;; *);;
+
+concept_kubotan=>nrel_main_idtf:
+[Куботан](* <-lang_ru;; *);;
+
+concept_mace=>nrel_main_idtf:
+[Булава](* <-lang_ru;; *);;
+
+concept_brass_knuckles=>nrel_main_idtf:
+[Кастет](* <-lang_ru;; *);;
+
+concept_sai=>nrel_main_idtf:
+[Саи](* <-lang_ru;; *);;
+
+concept_cossacks_sword=>nrel_main_idtf:
+[Шашка](* <-lang_ru;; *);;
+
+concept_scottish_sword=>nrel_main_idtf:
+[Палаш](* <-lang_ru;; *);;
+
+concept_ball_mace
+=>nrel_main_idtf:
+[Шаровидная булава](* <-lang_ru;; *);;
+
+concept_ball_shaped_mace
+=>nrel_main_idtf:
+[Шарообразная булава](* <-lang_ru;; *);;
+
+concept_round_mace
+=>nrel_main_idtf:
+[Круглая булава](* <-lang_ru;; *);;
+
+concept_dagger
+=>nrel_main_idtf:
+[Кинжал](* <-lang_ru;; *);;
+
+/*parts of edged weapon*/
+concept_cage =>nrel_main_idtf:
+[Обоймица](* <-lang_ru;; *);;
+
+concept_lanyard_hole =>nrel_main_idtf:
+[Отверстие под темляк](* <-lang_ru;; *);;
+
+concept_main_handle_part =>nrel_main_idtf:
+[Черен](* <-lang_ru;; *);;
+
+concept_abdomen =>nrel_main_idtf:
+[Брюшко](* <-lang_ru;; *);;
+
+concept_back =>nrel_main_idtf:
+[Спинка](* <-lang_ru;; *);;
+
+concept_border =>nrel_main_idtf:
+[Граница](* <-lang_ru;; *);;
+
+concept_tsuba =>nrel_main_idtf:
+[Цуба](* <-lang_ru;; *);;
+
+concept_handle =>nrel_main_idtf:
+[Рукоять](* <-lang_ru;; *);;
+
+concept_pommel =>nrel_main_idtf:
+[Навершие](* <-lang_ru;; *);;
+
+concept_blade =>nrel_main_idtf:
+[Клинок](* <-lang_ru;; *);;
+
+concept_edge =>nrel_main_idtf:
+[Лезвие](* <-lang_ru;; *);;
+
+concept_top =>nrel_main_idtf:
+[Верхушка](* <-lang_ru;; *);;
+
+concept_impactor =>nrel_main_idtf:
+[Ударная часть](* <-lang_ru;; *);;
+
+concept_guard =>nrel_main_idtf:
+[Гарда](* <-lang_ru;; *);;
+
+concept_butt =>nrel_main_idtf:
+[Обух](* <-lang_ru;; *);;
+
+concept_core =>nrel_main_idtf:
+[Сердцевина](* <-lang_ru;; *);;
+
+concept_stick =>nrel_main_idtf:
+[Палка](* <-lang_ru;; *);;
+
+concept_spearhead =>nrel_main_idtf:
+[Острие](* <-lang_ru;; *);;
+
+concept_heel =>nrel_main_idtf:
+[Пятка](* <-lang_ru;; *);;
+
+concept_shank =>nrel_main_idtf:
+[Хвостовик](* <-lang_ru;; *);;
+
+concept_false_edge =>nrel_main_idtf:
+[Фальшлезвие](* <-lang_ru;; *);;
+
+concept_serrator =>nrel_main_idtf:
+[Серрейтор](* <-lang_ru;; *);;
+
+concept_canvas =>nrel_main_idtf:
+[Полотно](* <-lang_ru;; *);;
+
+concept_stiffener =>nrel_main_idtf:
+[Ребро жесткости](* <-lang_ru;; *);;
+
+concept_fuller =>nrel_main_idtf:
+[Дол](* <-lang_ru;; *);;
+
+concept_descent =>nrel_main_idtf:
+[Спуск](* <-lang_ru;; *);;
+
+/*methods_of_making_edged_weapon*/
+concept_manufacturing_methods 
+=>nrel_main_idtf:
+[Способ изготовления](* <-lang_ru;; *);
+=>nrel_idtf:
+[Manufacturing method](* <-lang_en;; *);;
+
+concept_factory_method 
+=>nrel_main_idtf:
+[Фабричный способ изготовления](* <-lang_ru;; *);
+=>nrel_idtf:
+[Factory manufacturing method](* <-lang_en;; *);;
+
+concept_nonfactory_method
+=>nrel_main_idtf:
+[Нефабричный способ изготовления](* <-lang_ru;; *);
+=>nrel_idtf:
+[Nonfactory manufacturing method](* <-lang_en;; *);;
+
+concept_homemade_method 
+=>nrel_main_idtf:
+[Самодельный способ изготовления](* <-lang_ru;; *);
+=>nrel_idtf:
+[Homemade manufacturing method](* <-lang_en;; *);;
+
+concept_artisanal_method 
+=>nrel_main_idtf:
+[Кустарныый способ изготовления](* <-lang_ru;; *);
+=>nrel_idtf:
+[Artisanal manufacturing method](* <-lang_en;; *);;
+
+concept_rework_method 
+=>nrel_main_idtf:
+[Переделочный способ изготовления](* <-lang_ru;; *);
+=>nrel_idtf:
+[Rework manufactoring method](* <-lang_en;; *);;
+
+concept_method =>nrel_main_idtf:
+[Способ](* <-lang_ru;; *);;
+
+concept_special_equipment=>nrel_main_idtf:
+[Специальное оборудование](* <-lang_ru;; *);;
+
+concept_home_conditions=>nrel_main_idtf:
+[Домашние условия](* <-lang_ru;; *);;
+
+concept_standards=>nrel_main_idtf:
+[Стандарты](* <-lang_ru;; *);;
+
+concept_industrial_conditions=>nrel_main_idtf:
+[Промышленные условия](* <-lang_ru;; *);;
+
+concept_manufacturer=>nrel_main_idtf:
+[Изготовитель](* <-lang_ru;; *);;
+
+concept_factory_version=>nrel_main_idtf:
+[Фабричная версия](* <-lang_ru;; *);;
+
+concept_gunsmiths=>nrel_main_idtf:
+[Мастера- оружейники](* <-lang_ru;; *);;
+
+concept_factory_conditions=>nrel_main_idtf:
+[Фабричные условия](* <-lang_ru;; *);;
+
+
+/*types of edged weapon by principle of action*/
+concept_types_of_edged_weapon_by_principle_of_action
+=>nrel_main_idtf:
+[Типы холодного оружия по принципу действия](* <-lang_ru;; *);
+=>nrel_idtf:
+[Types of edged weapon by principle of action](* <-lang_en;; *);;
+
+concept_piercing_edged_weapon
+=>nrel_main_idtf:
+[Колящее холодное оружие](* <-lang_ru;; *);
+=>nrel_idtf:
+[Piercing edged weapon](* <-lang_en;; *);;
+
+concept_cutting_edged_weapon 
+=>nrel_main_idtf:
+[Режущее холодное оружие](* <-lang_ru;; *);
+=>nrel_idtf:
+[Cutting edged weapon](* <-lang_en;; *);;
+
+concept_chopping_edged_weapon 
+=>nrel_main_idtf:
+[Рубящее холодное оружие](* <-lang_ru;; *);
+=>nrel_idtf:
+[Chopping edged weapon](* <-lang_en;; *);;
+
+concept_piercingcutting_edged_weapon 
+=>nrel_main_idtf:
+[Коляще- режущее холодное оружие](* <-lang_ru;; *);
+=>nrel_idtf:
+[Piercing- cutting edged weapon](* <-lang_en;; *);;
+
+concept_piercingchopping_edged_weapon 
+=>nrel_main_idtf:
+[Коляще- рубящее холодное оружие](* <-lang_ru;; *);
+=>nrel_idtf:
+[Piercing- chopping edged weapon](* <-lang_en;; *);;
+
+concept_crushing_edged_weapon 
+=>nrel_main_idtf:
+[Дробящее холодное оружие](* <-lang_ru;; *);
+=>nrel_idtf:
+[Crashing edged weapon](* <-lang_en;; *);;
+
+
+/*medicine*/
+concept_neutralization =>nrel_main_idtf:
+[Нейтрализация](* <-lang_ru;; *);;
+
+concept_harakiri =>nrel_main_idtf:
+[Харакири](* <-lang_ru;; *);;
+
+concept_finishing_off =>nrel_main_idtf:
+[Добивание](* <-lang_ru;; *);;
+
+concept_decapitation =>nrel_main_idtf:
+[Обезглавливание](* <-lang_ru;; *);;
+
+concept_muscle_power =>nrel_main_idtf:
+[Мускульная сила](* <-lang_ru;; *);;
+
+concept_damage=>nrel_main_idtf:
+[Урон](* <-lang_ru;; *);;
+
+concept_tissue=>nrel_main_idtf:
+[Мягкие ткани](* <-lang_ru;; *);;
+
+concept_bones=>nrel_main_idtf:
+[Кости](* <-lang_ru;; *);;
+
+concept_stabcutted_wounds=>nrel_main_idtf:
+[Колото- резанная рана](* <-lang_ru;; *);;
+
+concept_stabchopped_wounds=>nrel_main_idtf:
+[Колото- рубленная рана](* <-lang_ru;; *);;
+
+concept_cut_wounds=>nrel_main_idtf:
+[Резанная рана](* <-lang_ru;; *);;
+
+concept_chopped_wounds=>nrel_main_idtf:
+[Рубленная рана](* <-lang_ru;; *);;
+
+concept_jabs=>nrel_main_idtf:
+[Уколы](* <-lang_ru;; *);;
+
+concept_hand =>nrel_main_idtf:
+[Рука](* <-lang_ru;; *);;
+
+
+/*not weapon*/
+concept_cap =>nrel_main_idtf:
+[Колпачок](* <-lang_ru;; *);;
+
+concept_ring =>nrel_main_idtf:
+[Кольцо](* <-lang_ru;; *);;
+
+concept_hole =>nrel_main_idtf:
+[Отверстие](* <-lang_ru;; *);;
+
+concept_sling =>nrel_main_idtf:
+[Стропа](* <-lang_ru;; *);;
+
+concept_cord =>nrel_main_idtf:
+[Шнур](* <-lang_ru;; *);;
+
+concept_folded_state =>nrel_main_idtf:
+[Сложенное состояние](* <-lang_ru;; *);;
+
+concept_combat_state =>nrel_main_idtf:
+[Боевое состояние](* <-lang_ru;; *);;
+
+concept_defeat =>nrel_main_idtf:
+[Поражение](* <-lang_ru;; *);;
+
+concept_enemy =>nrel_main_idtf:
+[Противник](* <-lang_ru;; *);;
+
+concept_cloth_belt =>nrel_main_idtf:
+[Матерчатый пояс](* <-lang_ru;; *);;
+
+concept_closed_rooms =>nrel_main_idtf:
+[Замкнутые помещения](* <-lang_ru;; *);;
+
+concept_horsemen =>nrel_main_idtf:
+[Всадник](* <-lang_ru;; *);;
+
+concept_samurai =>nrel_main_idtf:
+[Cамурай](* <-lang_ru;; *);;
+
+concept_merchants =>nrel_main_idtf:
+[Купцы](* <-lang_ru;; *);;
+
+concept_object =>nrel_main_idtf:
+[Объект](* <-lang_ru;; *);;
+
+concept_number
+=>nrel_main_idtf:
+[Число](* <-lang_ru;; *);;
+
+concept_aim=>nrel_main_idtf:
+[Цель](* <-lang_ru;; *);;
+
+concept_citizens=>nrel_main_idtf:
+[Граждане](* <-lang_ru;; *);;
+
+concept_self_defence=>nrel_main_idtf:
+[Самооборона](* <-lang_ru;; *);;
+
+concept_human=>nrel_main_idtf:
+[Человек](* <-lang_ru;; *);;
+
+concept_police=>nrel_main_idtf:
+[Полиция](* <-lang_ru;; *);;
+
+concept_inventory=>nrel_main_idtf:
+[Инвентарь](* <-lang_ru;; *);;
+
+concept_army=>nrel_main_idtf:
+[Армия](* <-lang_ru;; *);;
+
+concept_national_costume=>nrel_main_idtf:
+[Национальный костюм](* <-lang_ru;; *);;
+
+concept_way=>nrel_main_idtf:
+[Способ](* <-lang_ru;; *);;
+
+concept_antique_collection=>nrel_main_idtf:
+[Антикварная коллекция](* <-lang_ru;; *);;
+
+concept_part_of_instrument=>nrel_main_idtf:
+[Часть инструмента](* <-lang_ru;; *);;
+
+concept_owner =>nrel_main_idtf:
+[Владелец](* <-lang_ru;; *);;
+
+concept_instrument =>nrel_main_idtf:
+[Инструмент](* <-lang_ru;; *);;
+
+
+/*reletive*/
+nrel_state
+=>nrel_main_idtf:
+[Состояние*](* <-lang_ru;; *);;
+
+nrel_model
+=>nrel_main_idtf:
+[Модель*](* <-lang_ru;; *);;
+
+nrel_construction
+=>nrel_main_idtf:
+[Конструкция*](* <-lang_ru;; *);;
+
+nrel_be_perpendicular
+=>nrel_main_idtf:
+[Быть перпендикулярным*](* <-lang_ru;; *);;
+
+nrel_prototype
+=>nrel_main_idtf:
+[Прообраз*](* <-lang_ru;; *);;
+
+nrel_not_used
+=>nrel_main_idtf:
+[Не используется*](* <-lang_ru;; *);
+=>nrel_idtf:
+[Not used*](* <-lang_en;; *);;
+
+nrel_purpose_of_use
+=>nrel_main_idtf:
+[Цель использования*](* <-lang_ru;; *);
+=>nrel_idtf:
+[Purpous of use*](* <-lang_en;; *);;
+
+nrel_impactor
+=>nrel_main_idtf:
+[Ударная часть*](* <-lang_ru;; *);
+=>nrel_idtf:
+[Impactor*](* <-lang_en;; *);;
+
+nrel_part
+=>nrel_main_idtf:
+[Часть*](* <-lang_ru;; *);
+=>nrel_idtf:
+[Part*](* <-lang_en;; *);;
+
+nrel_manufactory_method 
+=>nrel_main_idtf:
+[Способ изготовления*](* <-lang_ru;; *);
+=>nrel_idtf:
+[Manufactory method*](* <-lang_en;; *);;
+
+nrel_comprises
+=>nrel_main_idtf:
+[Состоит из*](* <-lang_ru;; *);
+=>nrel_idtf:
+[Comprises*](* <-lang_en;; *);;
+
+nrel_material_of_manufacture
+=>nrel_main_idtf:
+[Материал изготовления*](* <-lang_ru;; *);
+=>nrel_idtf:
+[Maerial of manufacture*](* <-lang_en;; *);;
+
+nrel_hold_by
+=>nrel_main_idtf:
+[Держмое*](* <-lang_ru;; *);
+=>nrel_idtf:
+[Holded*](* <-lang_en;; *);;
+
+nrel_opposite_to
+=>nrel_main_idtf:
+[Держмое*](* <-lang_ru;; *);
+=>nrel_idtf:
+[Opposit to*](* <-lang_en;; *);;
+
+nrel_material_of_tight
+=>nrel_main_idtf:
+[Материал обтяжки*](* <-lang_ru;; *);
+=>nrel_idtf:
+[Material of tight *](* <-lang_en;; *);;
+
+
+/*materials*/
+concept_electrical_conductivity
+=>nrel_main_idtf:
+[Электропроводность](* <-lang_ru;; *);;
+
+concept_heat_capacity
+=>nrel_main_idtf:
+[Теплоемкость](* <-lang_ru;; *);;
+
+concept_ductility
+=>nrel_main_idtf:
+[Ковкость](* <-lang_ru;; *);;
+
+concept_shine
+=>nrel_main_idtf:
+[Блеск](* <-lang_ru;; *);;
+
+concept_alloy
+=>nrel_main_idtf:
+[Сплав](* <-lang_ru;; *);;
+
+concept_simple_substance
+=>nrel_main_idtf:
+[Простое вещество](* <-lang_ru;; *);;
+
+concept_substance
+=>nrel_main_idtf:
+[Вещество](* <-lang_ru;; *);;
+
+concept_combined_materials
+=>nrel_main_idtf:
+[Комбинированные материалы](* <-lang_ru;; *);;
+
+concept_plastic
+=>nrel_main_idtf:
+[Пластик](* <-lang_ru;; *);;
+
+concept_tree
+=>nrel_main_idtf:
+[Дерево](* <-lang_ru;; *);;
+
+concept_hard_material
+=>nrel_main_idtf:
+[Твердый материал](* <-lang_ru;; *);;
+
+concept_soft_material
+=>nrel_main_idtf:
+[Мягкий материал](* <-lang_ru;; *);;
+
+concept_metal
+=>nrel_main_idtf:
+[Металл](* <-lang_ru;; *);;
+
+concept_usual_skin
+=>nrel_main_idtf:
+[Простая кожа](* <-lang_ru;; *);;
+
+concept_skat_skin
+=>nrel_main_idtf:
+[Кожа ската](* <-lang_ru;; *);;
+
+
+/*japanes*/
+concept_tonfu
+=>nrel_main_idtf:
+[Тонфу](* <-lang_ru;; *);
+=>nrel_idtf:
+[Tonfu](* <-lang_en;; *);;
+
+concept_tati
+=>nrel_main_idtf:
+[Тати](* <-lang_ru;; *);
+=>nrel_idtf:
+[Tati](* <-lang_en;; *);;
+
+concept_aikuti
+=>nrel_main_idtf:
+[Айкути](* <-lang_ru;; *);
+=>nrel_idtf:
+[Aikuti](* <-lang_en;; *);;
+
+concept_tanto
+=>nrel_main_idtf:
+[Танто](* <-lang_ru;; *);
+=>nrel_idtf:
+[Tanto](* <-lang_en;; *);;
+
+concept_katana
+=>nrel_main_idtf:
+[Катана](* <-lang_ru;; *);
+=>nrel_idtf:
+[Katana](* <-lang_ru;; *);;
+
+concept_vakidzasi
+=>nrel_main_idtf:
+[Вакидзаси](* <-lang_ru;; *);
+=>nrel_idtf:
+[Vakidzasi](* <-lang_en;; *);;
+
+concept_daisho
+=>nrel_main_idtf:
+[Даито](* <-lang_ru;; *);
+=>nrel_idtf:
+[Daisho](* <-lang_en;; *);;
+
+concept_nodati
+=>nrel_main_idtf:
+[Нодати](* <-lang_ru;; *);
+=>nrel_idtf:
+[Nodati](* <-lang_en;; *);;
+
+concept_short_japanes_sword =>nrel_main_idtf:
+[Короткий японский меч](* <-lang_ru;; *);;
+
+concept_japanes_sword =>nrel_main_idtf:
+[Японский меч](* <-lang_ru;; *);;
+
+concept_japanes_two_handed_sword =>nrel_main_idtf:
+[Японский двуручный меч](* <-lang_ru;; *);;
+
+concept_big_japanes_sword =>nrel_main_idtf:
+[Большой японский меч](* <-lang_ru;; *);;
+
+
+/*измеренеия*/
+concept_quantity
+=>nrel_main_idtf:
+[Количество](* <-lang_ru;; *);;
+
+concept_form
+=>nrel_main_idtf:
+[Форма](* <-lang_ru;; *);;
+
+concept_form_tati
+=>nrel_main_idtf:
+[Изогнутей катаны](* <-lang_ru;; *);;
+
+concept_longer_than_katana
+=>nrel_main_idtf:
+[Длинее катаны](* <-lang_ru;; *);;
+
+concept_approximate_value 
+=>nrel_main_idtf:
+[Примерная величина](* <-lang_ru;; *);;
+
+concept_diameter
+=>nrel_main_idtf:
+[Диаметр](* <-lang_ru;; *);;
+
+concept_width
+=>nrel_main_idtf:
+[Толщина](* <-lang_ru;; *);;
+
+concept_weight
+=>nrel_main_idtf:
+[Масса](* <-lang_ru;; *);;
+
+concept_average_weight
+=>nrel_main_idtf:
+[Средняя масса](* <-lang_ru;; *);;
+
+concept_lenght
+=>nrel_main_idtf:
+[Длина](* <-lang_ru;; *);;
+
+concept_interval
+=>nrel_main_idtf:
+[Интервал](* <-lang_ru;; *);;
+
+concept_3_cm
+=>nrel_main_idtf:
+[3 см](* <-lang_ru;; *);;
+
+concept_4_cm
+=>nrel_main_idtf:
+[4 см](* <-lang_ru;; *);;
+
+concept_200_grams
+=>nrel_main_idtf:
+[200 грамм](* <-lang_ru;; *);;
+
+concept_300_grams
+=>nrel_main_idtf:
+[300 грамм](* <-lang_ru;; *);;
+
+concept_30.3_cm
+=>nrel_main_idtf:
+[30,3 см](* <-lang_ru;; *);;
+
+concept_60.6_cm
+=>nrel_main_idtf:
+[60,6 см](* <-lang_ru;; *);;
+
+concept_75.7_cm
+=>nrel_main_idtf:
+[75,7 см](* <-lang_ru;; *);;
+
+concept_30_cm
+=>nrel_main_idtf:
+[30 см](* <-lang_ru;; *);;
+
+concept_90_cm
+=>nrel_main_idtf:
+[90 см](* <-lang_ru;; *);;
+
+concept_100_cm
+=>nrel_main_idtf:
+[100 см](* <-lang_ru;; *);;
+
+concept_750_grams
+=>nrel_main_idtf:
+[750 грамм](* <-lang_ru;; *);;
+
+concept_40_cm
+=>nrel_main_idtf:
+[40 см](* <-lang_ru;; *);;
+
+concept_5_mm
+=>nrel_main_idtf:
+[5 мм](* <-lang_ru;; *);;
+
+concept_16_mm
+=>nrel_main_idtf:
+[16 мм](* <-lang_ru;; *);;
+
+concept_130_cm
+=>nrel_main_idtf:
+[130 см](* <-lang_ru;; *);;
+
+concept_110_cm
+=>nrel_main_idtf:
+[110 см](* <-lang_ru;; *);;
+
+concept_20_cm
+=>nrel_main_idtf:
+[20 см](* <-lang_ru;; *);;
+
+concept_less_than_30.3_cm
+=>nrel_main_idtf:
+[Меньше 30,3 см](* <-lang_ru;; *);;
+
+concept_600_gram
+=>nrel_main_idtf:
+[600 грамм](* <-lang_ru;; *);;
+
+concept_800_gram
+=>nrel_main_idtf:
+[800 грамм](* <-lang_ru;; *);;
+
+concept_more_than_20_cm
+=>nrel_main_idtf:
+[больше 20 см](* <-lang_ru;; *);;
+
+concept_50_cm
+=>nrel_main_idtf:
+[50 см](* <-lang_ru;; *);;
+
+concept_less_than_60_cm
+=>nrel_main_idtf:
+[меньше 60 см](* <-lang_ru;; *);;
+
+concept_undefined_value
+=>nrel_main_idtf:
+[Неопределенная величина](* <-lang_ru;; *);;
+
+concept_strength
+=>nrel_main_idtf:
+[Прочность](* <-lang_ru;; *);;
+
+
+/*tonfu*/
+concept_residents
+=>nrel_main_idtf:
+[Жители](* <-lang_ru;; *);;
+
+concept_island_okinava
+=>nrel_main_idtf:
+[Остров Окинава](* <-lang_ru;; *);;
+
+/*baton*/
+concept_model
+=>nrel_main_idtf:
+[Модель](* <-lang_ru;; *);;
+
+concept_construction
+=>nrel_main_idtf:
+[Конструкция](* <-lang_ru;; *);;

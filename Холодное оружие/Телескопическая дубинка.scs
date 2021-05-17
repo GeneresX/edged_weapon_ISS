@@ -1,0 +1,114 @@
+/*nrel*/
+sc_node_not_binary_tuple
+->..some_name;
+->..some_name1;;
+
+sc_node_not_relation
+->..some_name4;
+->..some_name5;;
+
+sc_node_not_relation
+->..some_name6;;
+
+/*defenition*/
+concept_telescopic_baton <-rrel_key_sc_element:...
+    (*
+		<-definition;;
+		=>nrel_main_idtf:
+			[Опр. Телескопическая дубинка] 
+	(* 
+		<-lang_ru;;
+	*);;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Телескопическая дубинка — дробящее холодное оружие с телескопическим механизмом, при.]
+		(* <- lang_ru;; *);;
+	*);;
+		=>nrel_using_constants:..some_name
+	(*
+		->concept_crushing_edged_weapon;;
+		->concept_plastic;;
+		->concept_metal;;
+	*);;
+	*);;
+
+/*statement*/
+concept_telescopic_baton <-rrel_key_sc_element:...
+	(*
+		<-statement;;
+		=>nrel_main_idtf:[Утв. Основные парметры телескопической дубинки](* <- lang_ru;; *);;
+		=>nrel_using_constants:..some_name1
+	(*
+		-> concept_combat_state;;
+		-> concept_folded_state;;
+		-> concept_more_than_20_cm;;
+		-> concept_less_than_60_cm;;
+		-> concept_lenght;;
+		-> concept_material;;
+		-> concept_plastic;;
+		-> concept_metal;;
+		-> concept_combined_materials;;
+	*);;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Телескопическая имеет два состояния: боевое и сложенное. В сложенном состоянии
+		телескопическая дубинка имеет длину от 20 см, в боевоем состоянии длина состоявляет до 60 см.
+		Телескопические дубинки изготовливаются из метала, пластмассы, или из комбнированных материалов.]
+	(*
+		<-lang_ru;; 
+	*);;	
+	*);;
+	*);;
+
+/*измерения*/
+concept_approximate_value 
+-> concept_more_than_20_cm;
+-> concept_less_than_60_cm;;
+
+/*материалы, размеры, вес, способ действия, части*/
+concept_telescopic_baton -> ...
+(*
+	=>nrel_state:...
+	(*
+		<-concept_combat_state;;
+		<-concept_less_than_60_cm
+		(*
+			<-concept_lenght;;
+		*);;
+	*);;
+	=>nrel_state:...
+	(*
+		<-concept_folded_state;;
+		<-concept_more_than_20_cm
+		(*
+			<-concept_lenght;;
+		*);;
+	*);;
+	<-..some_name6
+	(*
+		<-concept_material;;
+		<=nrel_decomposition:..some_name5
+		(*
+			->concept_plastic;;
+			->concept_metal;;
+			->concept_combined_materials;;
+		*);;
+	*);;
+
+	<-concept_piercingcutting_edged_weapon;;
+*);;
+
+nrel_measurement -> ( ..some_name4 => (concept_30_cm <=> concept_50_cm));;
+
+/*picture*/
+concept_telescopic_baton <-rrel_key_sc_element:...
+(*
+    <-illustration;;
+    =>nrel_main_idtf:
+    [(Избр. Телескопическая дубинка в сложенном (1) и боевом состоянии (2).)](*<-lang_ru;;*);;
+    <=nrel_sc_text_translation:...
+        (*
+        ->"file://pictures/teleskopic_baton.jpg"(*=>nrel_format:format_jpg;;*);;
+        *);;
+*);;
+

@@ -1,0 +1,24 @@
+/*not_binary_tuple*/
+sc_node_not_binary_tuple
+->..some_name;;
+
+/*defenition*/
+concept_cutting_edged_weapon <-rrel_key_sc_element:...
+    (*
+		<-definition;;
+		=>nrel_main_idtf:
+			[Опр. Режущее холодное оружие] 
+	(*
+		->rrel_example: [Режущее холодное оружие – нанесение урона цели происходит 
+		с помощью резанных ран.]
+		(* <- lang_ru;; *);;
+	*);; 
+		=>nrel_using_constants:..some_name
+	(*
+		->concept_aim;;
+		->concept_damage;;
+		->concept_cut_wounds;;
+	*);;
+	*);;
+
+

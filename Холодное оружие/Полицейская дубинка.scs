@@ -1,0 +1,118 @@
+/*nrel*/
+sc_node_not_binary_tuple
+->..some_name;
+->..some_name1;;
+
+sc_node_not_relation
+->..some_name3;
+->..some_name4;;
+
+/*defenition*/
+concept_baton <-rrel_key_sc_element:...
+    (*
+		<-definition;;
+		=>nrel_main_idtf:
+			[Опр. Полицейская дубинка] 
+	(* 
+		<-lang_ru;;
+	*);;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Полицейская дубинка — дробящее холодное оружие используемое полицией или армией, целью использования которой не 
+		является повреждение противника, а нейтрализация.]
+		(* <- lang_ru;; *);;
+	*);;
+		=>nrel_using_constants:..some_name
+	(*
+		->concept_crushing_edged_weapon;;
+		->concept_enemy;;
+		->concept_police;;
+		->concept_army;;
+		->concept_aim;;
+		->concept_damage;;
+		->concept_neutralization;;
+	*);;
+	*);;
+
+/*statement*/
+concept_baton <-rrel_key_sc_element:...
+	(*
+		<-statement;;
+		=>nrel_main_idtf:[Утв. Основные парметры полицейской дубинки](* <- lang_ru;; *);;
+		=>nrel_using_constants:..some_name1
+	(*
+		-> concept_handle;;
+		-> concept_weight;;
+		-> concept_lenght;;
+		-> concept_pommel;;
+		-> concept_diameter;;
+		-> concept_3_cm;;
+		-> concept_4_cm;;
+	*);;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Полицейские дубинки имеют разый вес, длину, она может иметь от одной до 
+		4 рукоятей. Некоторые модели полицейской дубинки имеют навершие диаметром примерно 3-4 см.]
+	(*
+		<-lang_ru;; 
+	*);;	
+	*);;
+	*);;
+
+concept_baton ->...
+(*
+	<-concept_crushing_edged_weapon;;
+	<-...
+	(*
+		<-concept_weight;;
+		<-concept_undefined_value;;
+	*);;
+	<-...
+	(*
+		<-concept_lenght;;
+		<-concept_undefined_value;;
+	*);;
+	=>nrel_part:...
+	(*
+		<-concept_handle;;
+		<-..some_name3
+		(*
+			<-concept_quantity;;
+			<-concept_interval;;
+		*);;
+	*);;
+	=>nrel_model:...
+	(*
+		<-concept_model;;
+		=>nrel_part:...
+		(*
+			<-concept_pommel;;
+			<-..some_name4
+			(*
+				<-concept_diameter;;
+				<-concept_interval;;
+			*);;
+		*);;
+	*);;
+*);;
+
+concept_approximate_value 
+-> concept_3_cm;
+-> concept_4_cm;;
+
+nrel_measurement -> ( ..some_name3 => (3 <=> 4));;
+
+nrel_measurement -> ( ..some_name4 => (concept_3_cm <=> concept_4_cm));;
+
+/*picture*/
+concept_baton <-rrel_key_sc_element:...
+(*
+    <-illustration;;
+    =>nrel_main_idtf:
+    [(Избр. Пример полицейской дубинки)](*<-lang_ru;;*);;
+    <=nrel_sc_text_translation:...
+        (*
+        ->"file://pictures/baton.jpg"(*=>nrel_format:format_jpg;;*);;
+        *);;
+*);;
+

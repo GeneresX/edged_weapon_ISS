@@ -1,0 +1,38 @@
+/*nrel*/
+sc_node_not_binary_tuple
+->..some_name;;
+
+/*defenition*/
+concept_sperhead <-rrel_key_sc_element:...
+    (*
+		<-definition;;
+		=>nrel_main_idtf:
+			[Опр. Острие] 
+	(* 
+		<-lang_ru;;
+	*);;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Острие — точка клинка, где обух или фальшлезвие соеденяется с лезвием.]
+		(* <- lang_ru;; *);;
+	*);;
+		=>nrel_using_constants:..some_name
+	(*
+		->concept_edge;;
+		->concept_butt;;
+		->concept_blade;;
+		->concept_false_edge;;
+	*);;
+	*);;
+
+/*picture*/
+concept_sperhead <-rrel_key_sc_element:...
+(*
+    <-illustration;;
+    =>nrel_main_idtf:
+    [(Избр. Острие)](*<-lang_ru;;*);;
+    <=nrel_sc_text_translation:...
+	(*
+        ->"file://pictures/sperhead.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;

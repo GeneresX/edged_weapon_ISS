@@ -1,0 +1,123 @@
+/*nrel*/
+sc_node_not_binary_tuple
+->..some_name;
+->..some_name1;;
+
+sc_node_not_relation
+->..some_name4;
+->..some_name5;
+->..some_name6;;
+
+/*defenition*/
+concept_nodati <-rrel_key_sc_element:...
+    (*
+		<-definition;;
+		=>nrel_main_idtf:
+			[Опр. Нодати] 
+	(* 
+		<-lang_ru;;
+	*);;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Нодати — большой японский меч. Зачастую использовался для борьбы с 
+		всадниками. Не использовался в замкнутых помещениях из-за больших размеров.]
+		(* <- lang_ru;; *);;
+	*);;
+		=>nrel_using_constants:..some_name
+	(*
+		->concept_big_japanes_sword;;
+		->concept_horsemen;;
+		->concept_handle;;
+		->concept_closed_rooms;;
+	*);;
+	*);;
+
+/*statement*/
+concept_nodati <-rrel_key_sc_element:...
+	(*
+		<-statement;;
+		=>nrel_main_idtf:[Утв. Основные парметры нодати](* <- lang_ru;; *);;
+		=>nrel_using_constants:..some_name1
+	(*
+		->concept_750_grams;;
+		->concept_30_cm;;
+		->concept_40_cm;;
+		->concept_5_mm;;
+		->concept_16_mm;;
+		->concept_130_cm;;
+		->concept_110_cm;;
+		->concept_blade;;
+		->concept_handle;;
+		->concept_piercingchopping_edged_weapon;;
+	*);;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Нодати является коляще- рубящим холодным оружимем. Длина клинка состовляет 110-130 см, 
+		толщина клинка порядка 5-16 мм, длина рукояти 30-40см, вес порядка 1,5 кг.]
+	(*
+		<-lang_ru;; 
+	*);;	
+	*);;
+	*);;
+
+/*измерения*/
+concept_approximate_value 
+->concept_750_grams;
+->concept_30_cm;
+->concept_40_cm;
+->concept_5_mm;
+->concept_16_mm;
+->concept_130_cm;
+->concept_110_cm;;
+
+/*материалы, размеры, вес, способ действия, части*/
+concept_nodati -> ...
+(*
+	<- concept_1.5_kg
+	(*
+		<-concept_weight;;
+	*);;
+	=>nrel_part: ...
+	(*
+		<-concept_blade;;
+		<-..some_name4
+		(*
+			<-concept_lenght;;
+			<-concept_interval;;
+		*);;
+		<-..some_name5
+		(*
+			<-concept_width;;
+			<-concept_interval;;
+		*);;
+	*);;
+	=>nrel_part: ...
+	(*
+		<-concept_handle;;
+		<-..some_name6
+		(*
+			<-concept_lenght;;
+			<-concept_interval;;
+		*);;
+	*);;
+	<-concept_piercingchopping_edged_weapon;;
+*);;
+
+nrel_measurement -> ( ..some_name4 => (concept_1.5_kg110_cm <=> concept_1.5_kg130_cm));;
+
+nrel_measurement -> ( ..some_name5 => (concept_1.5_kg5_mm <=> concept_1.5_kg16_mm));;
+
+nrel_measurement -> ( ..some_name6 => (concept_1.5_kg30_cm <=> concept_1.5_kg40_cm));;
+
+/*picture*/
+concept_nodati <-rrel_key_sc_element:...
+(*
+    <-illustration;;
+    =>nrel_main_idtf:
+    [Избр. Пример нодати)](*<-lang_ru;;*);;
+    <=nrel_sc_text_translation:...
+        (*
+        ->"file://pictures/nodati.jpg"(*=>nrel_format:format_jpg;;*);;
+        *);;
+*);;
+

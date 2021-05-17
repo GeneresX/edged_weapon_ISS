@@ -1,0 +1,23 @@
+/*not_binary_tuple*/
+sc_node_not_binary_tuple
+->..some_name;
+->..some_name1;;
+
+/*defenition*/
+concept_homemade_manufacturing_conditions<-rrel_key_sc_element:...
+    (*
+		<-definition;;
+		=>nrel_main_idtf:
+			[Опр. Самодельные условия изготовления] 
+	(*
+		->rrel_example: [Самодельные условия изготовления – изготовление чего-либо
+		в домашних условиях, без специального оборудования.]
+		(* <- lang_ru;; *);;
+	*);;
+		=>nrel_using_constants:..some_name
+	(*
+		->concept_special_equipment;;
+		->concept_home_conditions;;
+	*);;
+	*);;
+

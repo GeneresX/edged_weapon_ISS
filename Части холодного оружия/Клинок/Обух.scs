@@ -1,0 +1,40 @@
+/*nrel*/
+sc_node_not_binary_tuple
+->..some_name;;
+
+/*defenition*/
+concept_butt <-rrel_key_sc_element:...
+    (*
+		<-definition;;
+		=>nrel_main_idtf:
+			[Опр. Обух] 
+	(* 
+		<-lang_ru;;
+	*);;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Обух — верхняя незаточенная граница клинка от острия до рукояти.]
+		(* <- lang_ru;; *);;
+	*);;
+		=>nrel_using_constants:..some_name
+	(*
+		->concept_edge;;
+		->concept_spearhead;;
+		->conecpt_handle;;
+		->concept_border;;
+	*);;
+	*);;
+
+concept_butt =>nrel_opposite_to: concept_edge;;
+
+/*picture*/
+concept_butt <-rrel_key_sc_element:...
+(*
+    <-illustration;;
+    =>nrel_main_idtf:
+    [(Избр. Обух)](*<-lang_ru;;*);;
+    <=nrel_sc_text_translation:...
+	(*
+        ->"file://pictures/butt.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;

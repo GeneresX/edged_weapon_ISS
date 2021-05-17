@@ -1,0 +1,37 @@
+/*nrel*/
+sc_node_not_binary_tuple
+->..some_name;;
+
+/*defenition*/
+concept_guard <-rrel_key_sc_element:...
+    (*
+		<-definition;;
+		=>nrel_main_idtf:
+			[Опр. Гарда] 
+	(* 
+		<-lang_ru;;
+	*);;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Гарда — часть холодного оружия, служащая для защиты руки владельца.]
+		(* <- lang_ru;; *);;
+	*);;
+		=>nrel_using_constants:..some_name
+	(*
+		->concept_hand;;
+		->concept_owner;;
+		->concept_edged_weapon;;
+	*);;
+	*);;
+
+/*picture*/
+concept_guard <-rrel_key_sc_element:...
+(*
+    <-illustration;;
+    =>nrel_main_idtf:
+    [(Избр. Пример гарды)](*<-lang_ru;;*);;
+    <=nrel_sc_text_translation:...
+	(*
+        ->"file://pictures/guard.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;

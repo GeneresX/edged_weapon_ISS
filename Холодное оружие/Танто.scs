@@ -1,0 +1,100 @@
+/*nrel*/
+sc_node_not_binary_tuple
+->..some_name;
+->..some_name1;;
+
+sc_node_not_relation
+->..some_name4;;
+
+/*defenition*/
+concept_tanto <-rrel_key_sc_element:...
+    (*
+		<-definition;;
+		=>nrel_main_idtf:
+			[Опр. Танто] 
+	(* 
+		<-lang_ru;;
+	*);;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Танто — кинжал самурая.]
+		(* <- lang_ru;; *);;
+	*);;
+		=>nrel_using_constants:..some_name
+	(*
+		->concept_dagger;;
+		->concept_samurai;;
+	*);;
+	*);;
+
+/*statement*/
+concept_tanto <-rrel_key_sc_element:...
+	(*
+		<-statement;;
+		=>nrel_main_idtf:[Утв. Основные парметры танто](* <- lang_ru;; *);;
+		=>nrel_using_constants:..some_name1
+	(*
+		-> concept_30.3_cm;;
+		-> concept_30_cm;;
+		-> concept_50_cm;;
+
+		->concept_blade;;
+		->concept_handle;;
+		->concept_piercingcutting_edged_weapon;;
+
+		->concept_finishing_off;;
+		->concept_decapitation;;
+		->concept_harakiri;;
+		->concept_knife;;
+	*);;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Танто является коляще-режущим холодным оружием, имеет клинок длиной 30,3 см
+		 и общую длину примерно 30-50 см. Танто использовался только как вспомогательное 
+		 оружия: добивания, обезглавливания, харакире. Танто не использовался как нож.]
+	(*
+		<-lang_ru;; 
+	*);;	
+	*);;
+	*);;
+	
+
+/*материалы, размеры, вес, способ действия, части*/
+concept_tanto -> ...
+(*
+	<-..some_name4
+	(*
+		<-concept_lenght;;
+		<-concept_interval;;
+	*);;
+	=>nrel_part: ...
+	(*
+		<-concept_blade;;
+		<- concept_30.3_cm
+		(*
+			<-concept_lenght;;
+		*);;
+	*);;
+	=>nrel_purpose_of_use: concept_decapitation;;
+	=>nrel_purpose_of_use: concept_harakiri;;
+	=>nrel_purpose_of_use: concept_finishing_off;;
+
+	=>nrel_not_used: concept_knife;;
+
+	<-concept_piercingcutting_edged_weapon;;
+*);;
+
+nrel_measurement -> ( ..some_name4 => (concept_30_cm <=> concept_50_cm));;
+
+/*picture*/
+concept_tanto <-rrel_key_sc_element:...
+(*
+    <-illustration;;
+    =>nrel_main_idtf:
+    [(Избр. Пример танто)](*<-lang_ru;;*);;
+    <=nrel_sc_text_translation:...
+        (*
+        ->"file://pictures/tanto.jpg"(*=>nrel_format:format_jpg;;*);;
+        *);;
+*);;
+

@@ -1,0 +1,54 @@
+/*not_binary_tuple*/
+sc_node_not_binary_tuple
+->..some_name;
+->..some_name1;;
+
+/*defenition*/
+concept_nonfactory_method <-rrel_key_sc_element:...
+    (*
+		<-definition;;
+		=>nrel_main_idtf:
+			[Опр. Нефабричный способ изготовления] 
+	(*
+		->rrel_example: [Нефабричный способ – изготовление не в фабричных условиях,
+		без соблюдения стандартов]
+		(* <- lang_ru;; *);;
+	*);;
+		=>nrel_using_constants:..some_name
+	(*
+		->concept_industrial_conditions;;
+		->concept_standards;;
+	*);;
+	*);;
+
+/*statemant*/
+concept_nonfactory_method <-rrel_key_sc_element:...
+	(*
+		<-statement;;
+		=>nrel_main_idtf:[Утв. Условия изготовления холодного оружия](* <- lang_ru;; *);;
+		=>nrel_using_constants:..some_name1
+	(*
+		->concept_standards;;
+		->concept_manufacturer;;
+	*);;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: [Нефабричный способ изготовления делится на: кустарный,
+		переделочный и самодельный способом изготовления.]
+	(*
+		<-lang_ru;; 
+	*);;	
+	*);;
+	*);;
+
+/*example*/
+concept_nonfactory_methods <= nrel_decomposition: ..some_name2
+(*
+	->concept_artisanal_method;;
+	->concept_rework_method;;
+	->concept_homemade_method;;
+*);;
+
+
+
+

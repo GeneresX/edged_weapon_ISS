@@ -1,0 +1,57 @@
+/*not_binary_tuple*/
+sc_node_not_binary_tuple
+->..some_name;
+->..some_name1;
+->..some_name2;;
+
+/*defenition*/
+concept_combat_edged_weapon <-rrel_key_sc_element:...
+    (*
+		<-definition;;
+		=>nrel_main_idtf:
+			[Опр. Боевое холодное оружие] 
+	(*
+		->rrel_example:[Боевое холодное оружие — холодное оружие целью использования которого
+		является человек.]
+		(* <- lang_ru;; *);;
+	*);;
+		=>nrel_using_constants:..some_name
+	(*
+		->concept_human;;
+		->concept_aim;;
+		->concept_edged_weapon;;
+	*);;
+	*);;
+
+/*statement*/
+concept_combat_edged_weapon <-rrel_key_sc_element:...
+	(*
+		<-statement;;
+		=>nrel_main_idtf:[Утв. Боевое холодное оружие](* <- lang_ru;; *);;
+		=>nrel_using_constants:..some_name1
+	(*
+	 	->concept_sportig_edged_weapon;;
+		->concept_civil_edged_wepon;;
+		->concept_hunting_edged_weapon;;
+		->concept_combat_edged_weapon;;
+	*);;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Боевое холодное оружие делится на полицейское и армейское холодное оружие.]
+	(*
+		<-lang_ru;; 
+	*);;	
+	*);;
+	*);;
+
+/*example*/
+concept_combat_edged_weapon  <= nrel_decomposition: ..some_name2
+(*
+	->concept_police_edged_weapon;;
+	->concept_military_edged_weapon;;
+*);;
+
+
+
+
+

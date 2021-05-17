@@ -1,0 +1,38 @@
+/*nrel*/
+sc_node_not_binary_tuple
+->..some_name;;
+
+/*defenition*/
+concept_stiffener <-rrel_key_sc_element:...
+    (*
+		<-definition;;
+		=>nrel_main_idtf:
+			[Опр. Ребро жесткости] 
+	(* 
+		<-lang_ru;;
+	*);;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Ребро жесткости — часть клинка придающая ему прочность, 
+		зачастую находится находится спуском.]
+		(* <- lang_ru;; *);;
+	*);;
+		=>nrel_using_constants:..some_name
+	(*
+		->concept_blade;;
+		->concept_strength;;
+		->concept_descent;;
+	*);;
+	*);;
+
+/*picture*/
+concept_stiffener <-rrel_key_sc_element:...
+(*
+    <-illustration;;
+    =>nrel_main_idtf:
+    [(Избр. Ребро жесткости)](*<-lang_ru;;*);;
+    <=nrel_sc_text_translation:...
+	(*
+        ->"file://pictures/stiffener.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;

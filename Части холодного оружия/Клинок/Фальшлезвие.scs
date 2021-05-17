@@ -1,0 +1,36 @@
+/*nrel*/
+sc_node_not_binary_tuple
+->..some_name;;
+
+/*defenition*/
+concept_false_edge <-rrel_key_sc_element:...
+    (*
+		<-definition;;
+		=>nrel_main_idtf:
+			[Опр. Фальшылезвие] 
+	(* 
+		<-lang_ru;;
+	*);;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Фальшлезвие — часть обуха из двух спусков, иногда бывает заточенной.]
+		(* <- lang_ru;; *);;
+	*);;
+		=>nrel_using_constants:..some_name
+	(*
+		->concept_butt;;
+		->concept_descent;;
+	*);;
+	*);;
+
+/*picture*/
+concept_false_edge <-rrel_key_sc_element:...
+(*
+    <-illustration;;
+    =>nrel_main_idtf:
+    [(Избр. Фальшлезвие)](*<-lang_ru;;*);;
+    <=nrel_sc_text_translation:...
+	(*
+        ->"file://pictures/false_edge.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;

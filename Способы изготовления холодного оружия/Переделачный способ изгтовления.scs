@@ -1,0 +1,23 @@
+/*not_binary_tuple*/
+sc_node_not_binary_tuple
+->..some_name;
+->..some_name1;;
+
+/*defenition*/
+concept_rework_manufacturing_conditions<-rrel_key_sc_element:...
+    (*
+		<-definition;;
+		=>nrel_main_idtf:
+			[Опр. Переделочные условия изготовления] 
+	(*
+		->rrel_example: [Переделочные условия изготовления – условия при которых происходит
+		переделка фабричной версии.]
+		(* <- lang_ru;; *);;
+	*);;
+		=>nrel_using_constants:..some_name
+	(*
+		->concept_conditions;;
+		->concept_factory_version;;
+	*);;
+	*);;
+

@@ -1,0 +1,25 @@
+/*not_binary_tuple*/
+sc_node_not_binary_tuple
+->..some_name;
+->..some_name1;;
+
+/*defenition*/
+concept_artisanal_manufacturing_conditions<-rrel_key_sc_element:...
+    (*
+		<-definition;;
+		=>nrel_main_idtf:
+			[Опр. Кустарные условия изготовления] 
+	(*
+		->rrel_example: [Кустарные условия изготовления – изготовление мастерами-оружейниками
+		в условиях фабрик или в домашних условиях.]
+		(* <- lang_ru;; *);;
+	*);;
+		=>nrel_using_constants:..some_name
+	(*
+		->concept_gunsmiths;;
+		->concept_home_conditions;;
+		->concept_factory_conditions;;
+	*);;
+	*);;
+
+

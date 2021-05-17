@@ -1,0 +1,21 @@
+/*not_binary_tuple*/
+sc_node_not_binary_tuple
+->..some_name;;
+
+/*defenition*/
+concept_hunting_edged_weapon <-rrel_key_sc_element:...
+    (*
+		<-definition;;
+		=>nrel_main_idtf:
+			[Опр. Охотничие холодное оружие] 
+	(*
+		->rrel_example:[Охотничие холодное оружие — это холодное оружие предназначеное
+		для использования во время охоты.]
+		(* <- lang_ru;; *);;
+	*);;
+		=>nrel_using_constants:..some_name
+	(*
+		->concept_hunt;;
+		->concept_edged_weapon;;
+	*);;
+	*);;

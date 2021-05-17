@@ -1,0 +1,57 @@
+/*not_binary_tuple*/
+sc_node_not_binary_tuple
+->..some_name;
+->..some_name1;;
+
+/*defenition*/
+concept_types_of_edged_weapon_by_principle_of_action <-rrel_key_sc_element:...
+    (*
+		<-definition;;
+		=>nrel_main_idtf:
+			[Опр. Типы холодного оружия по поражающему дейсвтию] 
+	(*
+		->rrel_example: [Типы холодного оружия по поражающему действию – классификация холодного оружия
+		по способу нанесения урона цели.]
+		(* <- lang_ru;; *);;
+	*);;
+		=>nrel_using_constants:..some_name
+	(*
+		->concept_aim;;
+		->concept_damage;;
+		->concept_way;;
+	*);;
+	*);;
+
+/*statemant*/
+concept_types_of_edged_weapon_by_principle_of_action <-rrel_key_sc_element:...
+	(*
+		<-statement;;
+		=>nrel_main_idtf:[Утв. Типы холодного оружия по поражающему действию](* <- lang_ru;; *);;
+		=>nrel_using_constants:..some_name1
+	(*
+		->cocncept_crushing_edged_weapon;;
+		->concept_piercing_edged_weapon;;
+		->concept_cutting_edged_weapon;;
+		->concept_chopping_edged_weapon;;
+		->concept_piercingcutting_edged_weapon;;
+		->concept_piercingchopping_edged_weapon;;
+	*);;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: [Типами холодного оружия по поражающему дейсвтию являются: дробящее, колящее, 
+		режущие, рубящее, коляще- режущие, коляяще- рубящее.]
+	(*
+		<-lang_ru;; 
+	*);;	
+	*);;
+	*);;
+
+/*example*/
+concept_types_of_edged_weapon_by_principle_of_action => nrel_inclusion: cocncept_crushing_edged_weapon;;
+concept_types_of_edged_weapon_by_principle_of_action => nrel_inclusion: concept_piercing_edged_weapon;;
+concept_types_of_edged_weapon_by_principle_of_action => nrel_inclusion: concept_cutting_edged_weapon;;
+concept_types_of_edged_weapon_by_principle_of_action => nrel_inclusion: concept_chopping_edged_weapon;;
+concept_types_of_edged_weapon_by_principle_of_action => nrel_inclusion: concept_piercingcutting_edged_weapon;;
+concept_types_of_edged_weapon_by_principle_of_action => nrel_inclusion: concept_piercingchopping_edged_weapon;;
+
+

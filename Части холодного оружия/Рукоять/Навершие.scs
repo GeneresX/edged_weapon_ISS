@@ -1,0 +1,67 @@
+/*nrel*/
+sc_node_not_binary_tuple
+->..some_name;
+->..some_name1;;
+
+/*defenition*/
+concept_pommel <- rrel_key_sc_element:...
+    (*
+		<-definition;;
+		=>nrel_main_idtf:
+			[Опр. Навершие] 
+	(* 
+		<-lang_ru;;
+	*);;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Навершие — верхушка объекта, в холодном оружии 
+		часть рукояти, противоположная клинку.]
+		(* <- lang_ru;; *);;
+	*);;
+		=>nrel_using_constants:..some_name
+	(*
+		->concept_edge;; 
+		->conecpt_handle;;
+		->concept_object;;
+		->concept_top;;
+		->concept_edged_weapon;;
+	*);;
+	*);;
+
+/*statement*/
+concept_pommel <- rrel_key_sc_element:...
+	(*
+		<-statement;;
+		=>nrel_main_idtf:[Утв. Навершие](* <- lang_ru;; *);;
+		=>nrel_using_constants:..some_name1
+	(*
+		->concept_mace;;
+	*);;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[У булавы навершие является ударной частью.]
+	(*
+		<-lang_ru;; 
+	*);;	
+	*);;
+	*);;
+
+/*example*/
+concept_pommel->...
+(*
+	<=nrel_impactor: concept_mace;;
+*);;
+
+/*picture*/
+concept_pommel <-rrel_key_sc_element:...
+(*
+    <-illustration;;
+    =>nrel_main_idtf:
+    [(Избр. Пример навершия булавы (1) и ножа (2).)](*<-lang_ru;;*);;
+    <=nrel_sc_text_translation:...
+	(*
+        ->"file://pictures/pommel.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;
+
+

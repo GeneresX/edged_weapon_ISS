@@ -1,0 +1,39 @@
+/*nrel*/
+sc_node_not_binary_tuple
+->..some_name;;
+
+/*defenition*/
+concept_lanyard_hole <-rrel_key_sc_element:...
+    (*
+		<-definition;;
+		=>nrel_main_idtf:
+			[Опр. Отверстие под темляк] 
+	(* 
+		<-lang_ru;;
+	*);;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Отверстие под темляк — отверстие в рукояти, в
+		 которое можно продеть шнур или стропу.]
+		(* <- lang_ru;; *);;
+	*);;
+		=>nrel_using_constants:..some_name
+	(*
+		->concept_handle;;
+		->concept_sling;;
+		->concept_cord;;
+		->concept_hole;;
+	*);;
+	*);;
+
+/*picture*/
+concept_lanyard_hole <-rrel_key_sc_element:...
+(*
+    <-illustration;;
+    =>nrel_main_idtf:
+    [(Избр. Отверстие под темляк)](*<-lang_ru;;*);;
+    <=nrel_sc_text_translation:...
+	(*
+        ->"file://pictures/lanyard_hole.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;

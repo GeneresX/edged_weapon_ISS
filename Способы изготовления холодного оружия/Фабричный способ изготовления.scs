@@ -1,0 +1,23 @@
+/*not_binary_tuple*/
+sc_node_not_binary_tuple
+->..some_name;
+->..some_name1;;
+
+/*defenition*/
+concept_factory_method <-rrel_key_sc_element:...
+    (*
+		<-definition;;
+		=>nrel_main_idtf:
+			[Опр. Фабричные условия изготовления] 
+	(*
+		->rrel_example: [Фабричный способ изготовления – изготовление в промышленных
+		условиях.]
+		(* <- lang_ru;; *);;
+	*);;
+		=>nrel_using_constants:..some_name
+	(*
+		->concept_industrial_conditions;;
+	*);;
+	*);;
+
+

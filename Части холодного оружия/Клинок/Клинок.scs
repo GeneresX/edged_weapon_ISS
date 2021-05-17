@@ -1,0 +1,81 @@
+/*nrel*/
+sc_node_not_binary_tuple
+->..some_name;
+->..some_name1;;
+
+/*defenition*/
+concept_blade <-rrel_key_sc_element:...
+    (*
+		<-definition;;
+		=>nrel_main_idtf:
+			[Опр. Клинок] 
+	(* 
+		<-lang_ru;;
+	*);;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Клинок — часть холодного оружия с режущей кромкой, наносящая урон цели.]
+		(* <- lang_ru;; *);;
+	*);;
+		=>nrel_using_constants:..some_name
+	(*
+		->concept_damage;;
+		->concept_aim;;
+		->concept_edged_weapon;;
+	*);;
+	*);;
+	
+/*statement*/
+concept_blade <- rrel_key_sc_element:...
+	(*
+		<-statement;;
+		=>nrel_main_idtf:[Утв. Части клинка](* <- lang_ru;; *);;
+		=>nrel_using_constants:..some_name1
+	(*
+	 	->concept_edge;; 	 
+		->concept_butt;;		 
+		->concept_spearhead;; 
+		->concept_heel;;		 
+		->concept_false_edge;;
+		->concept_serrator;;  
+		->concept_fuller;;	 
+		->concept_stiffener;; 
+		->concept_descent;;	 
+		->concept_canvas;;	 
+		->concept_shank;;	 
+	*);;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Частями клинка являются обух, лезвие, сердцевина, острие, пятка, 
+		фальш- лезвие, серейтор, дол, ребро жесткости, спуск, полотно, хвостовик.]
+	(*
+		<-lang_ru;; 
+	*);;	
+	*);;
+	*);;
+
+/*example*/
+concept_blade
+=>nrel_part: concept_edge; 	  //лезвие 
+=>nrel_part: concept_butt;		  //обух
+=>nrel_part: concept_spearhead;  //острие
+=>nrel_part: concept_heel;	    //пятка
+=>nrel_part: concept_false_edge; //фальшлезвие
+=>nrel_part: concept_serrator;   //серейтор
+=>nrel_part: concept_fuller;	  //дол
+=>nrel_part: concept_stiffener;  //ребро жесткости
+=>nrel_part: concept_descent;	  //спуск
+=>nrel_part: concept_canvas;	  //полотно
+=>nrel_part: concept_shank;;	  //хвостовик
+
+/*picture*/
+concept_blade <-rrel_key_sc_element:...
+(*
+    <-illustration;;
+    =>nrel_main_idtf:
+    [(Избр. Пример клинка)](*<-lang_ru;;*);;
+    <=nrel_sc_text_translation:...
+	(*
+        ->"file://pictures/blade.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;

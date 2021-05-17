@@ -1,0 +1,108 @@
+/*nrel*/
+sc_node_not_binary_tuple
+->..some_name;
+->..some_name1;;
+
+sc_node_not_relation
+->..some_name4;
+->..some_name5;;
+
+/*defenition*/
+concept_tonfu <-rrel_key_sc_element:...
+    (*
+		<-definition;;
+		=>nrel_main_idtf:
+			[Опр. Тонфу] 
+	(* 
+		<-lang_ru;;
+	*);;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Тонфу — дробящее холодное оружие используемое жителями острова Окинава. Тонфуя
+		является прообразом полицейской дубинки.]
+		(* <- lang_ru;; *);;
+	*);;
+		=>nrel_using_constants:..some_name
+	(*
+		->concept_crushing_edged_weapon;;
+		->concept_residents;;
+		->concept_island_okinava;;
+		->concept_baton;;
+	*);;
+	*);;
+
+/*statement*/
+concept_tonfu <-rrel_key_sc_element:...
+	(*
+		<-statement;;
+		=>nrel_main_idtf:[Утв. Основные парметры тонфу](* <- lang_ru;; *);;
+		=>nrel_using_constants:..some_name1
+	(*
+		-> concept_50_cm;;
+		-> concept_60_cm;;
+		-> concept_600_gram;;
+		-> concept_800_gram;;
+
+		->concept_handle;;
+		->concept_stick;;
+	*);;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Тонфу состоит из палки длинной 50-60 см и ручки перпендекулярной ей. Тонфу изготавливались
+		из дерева. Средняя масса тонфу составляла от 600 до 800 грамм.]
+	(*
+		<-lang_ru;; 
+	*);;	
+	*);;
+	*);;
+
+/*измерения*/
+concept_approximate_value 
+-> concept_50_cm;
+-> concept_60_cm;
+-> concept_600_gram;
+-> concept_800_gram;;
+
+/*материалы, размеры, вес, способ действия, части*/
+concept_tonfu -> ...
+(*
+	<-..some_name4
+	(*
+		<-concept_average_weight;;
+		<-concept_interval;;
+	*);;
+	=>nrel_part: ...
+	(*
+		<-concept_stick;;
+		<-..some_name5
+		(*
+			<-concept_lenght;;
+			<-concept_interval;;
+		*);;
+	*);;
+	=>nrel_part: ...
+	(*
+		<-concept_handle;;
+	*);;
+	<-nrel_material_of_manufacture: concept_tree;;
+	<-concept_crushing_edged_weapon;;
+*);;
+
+nrel_measurement -> ( ..some_name4 => (concept_600_grams <=> concept_800_grams));;
+
+nrel_measurement -> ( ..some_name5 => (concept_50_cm <=> concept_60_cm));;
+
+concept_tonfu <=> nrel_be_perpendicular: concept_baton;;
+
+/*picture*/
+concept_tonfu <-rrel_key_sc_element:...
+(*
+    <-illustration;;
+    =>nrel_main_idtf:
+    [(Избр. Пример тонфу)](*<-lang_ru;;*);;
+    <=nrel_sc_text_translation:...
+        (*
+        ->"file://pictures/tonfu.jpg"(*=>nrel_format:format_jpg;;*);;
+        *);;
+*);;
+

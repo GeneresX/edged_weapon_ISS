@@ -1,0 +1,83 @@
+/*nrel*/
+sc_node_not_binary_tuple
+->..some_name;;
+
+/*defenition*/
+concept_handle <- rrel_key_sc_element:...
+    (*
+		<-definition;;
+		=>nrel_main_idtf:
+			[Опр. Рукоять] 
+	(* 
+		<-lang_ru;;
+	*);;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Рукоять — часть оружия или инструмента, которую держит рукой владелец.]
+		(* <- lang_ru;; *);;
+	*);;
+		=>nrel_using_constants:..some_name
+	(*
+		->concept_instrument;;
+		->concept_weapon;;
+		->concept_hand;;
+		->concept_owner;;
+	*);;
+	*);;
+ 
+/*statement*/
+concept_handle <- rrel_key_sc_element:...
+	(*
+		<-statement;;
+		=>nrel_main_idtf:[Утв. Части рукояти](* <- lang_ru;; *);;
+		=>nrel_using_constants:..some_name1
+	(*
+	 	->concept_back;; 	  		
+		->concept_main_handle_part;;	
+		->concept_pommel;;  			
+		->concept_abdomen;;		  	
+		->concept_lanyard_hole;;      
+		->concept_cage;; 	
+		->concept_forging;;	  	
+	*);;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Частями рукояти являются спинка, навершие, черен,
+		брюшко, отверстие под темляк, обоймица, оковка.]
+	(*
+		<-lang_ru;; 
+	*);;	
+	*);;
+	*);;
+
+
+/*example*/
+concept_handle->...
+(*
+	=>nrel_part: concept_instrument;;
+	=>nrel_part: concept_weapon;;	
+	<=nrel_hold_by: concept_owner;;
+*);;
+
+concept_handle
+=>nrel_part: concept_back; 	  		    	//спинка
+=>nrel_part: concept_main_handle_part;	    //черен
+=>nrel_part: concept_pommel;			    //наврешие
+=>nrel_part: concept_abdomen;	  	        //брюшко
+=>nrel_part: concept_lanyard_hole;          //отверстие под темляк
+=>nrel_part: concept_cage;		  		    //обоймица
+=>nrel_part: concept_forging;; 				//оковка
+
+/*picture*/
+concept_handle <-rrel_key_sc_element:...
+(*
+    <-illustration;;
+    =>nrel_main_idtf:
+    [(Избр. Пример рукояти)](*<-lang_ru;;*);;
+    <=nrel_sc_text_translation:...
+	(*
+        ->"file://pictures/handle.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;
+
+
