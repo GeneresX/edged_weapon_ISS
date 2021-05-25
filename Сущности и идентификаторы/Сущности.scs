@@ -5,6 +5,7 @@ sc_node_role_relation
 
 /*norole*/
 sc_node_norole_relation
+->nrel_method_of_manufacture;
 ->nrel_manufactory_method;
 ->nrel_weight_of_pommel;
 ->nrel_state;

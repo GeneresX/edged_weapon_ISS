@@ -5,7 +5,7 @@ sc_node_not_binary_tuple
 -> ..some_name2;;
 
 /*defenition*/
-nrel_part <-rrel_key_sc_element:...
+nrel_method_of_manufacture <-rrel_key_sc_element:...
 (*
 	<-definition;;
 	=>nrel_main_idtf:[Опр. Способ изготовления*] (* <- lang_ru;; *);;
@@ -22,7 +22,7 @@ nrel_part <-rrel_key_sc_element:...
 *);;
 
 /*statement*/
-nrel_part <-rrel_key_sc_element:...
+nrel_method_of_manufacture <-rrel_key_sc_element:...
 (*
 	<-statement;;
 	=>nrel_main_idtf:[Утв. Способ изготовления*] (* <- lang_ru;; *);;
@@ -37,7 +37,7 @@ nrel_part <-rrel_key_sc_element:...
 *);;
 
 /*arity*/
-nrel_part <-...
+nrel_method_of_manufacture <-...
 (*
 	<-arity;;
 	=>nrel_measurement: 2
@@ -47,10 +47,10 @@ nrel_part <-...
 *);;
 
 /*domains*/
-nrel_part =>nrel_first_domain:concept_manufactoring_methods;;
-nrel_part =>nrel_second_domain:concept_edged_weapon;;
+nrel_method_of_manufacture =>nrel_first_domain:concept_manufactoring_methods;;
+nrel_method_of_manufacture =>nrel_second_domain:concept_edged_weapon;;
 
-nrel_part  => nrel_domain:...
+nrel_method_of_manufacture  => nrel_domain:...
 (*
 	<=nrel_inclusion: ..some_name2
 	(*
@@ -60,7 +60,7 @@ nrel_part  => nrel_domain:...
 *);;
 
 /*antirefleksive*/
-nrel_part 
+nrel_method_of_manufacture 
 <-oriented_relation
 (*
 	<=nrel_inclusion:relation;;
@@ -74,6 +74,6 @@ binary_relation
 =>nrel_inclusion:antireflexive_relation;;
 
 /*example*/
-rrel_example -> ( nrel_part -> ( ..some_name5 => ..some_name4 ) );;
-..some_name5 <- concept_manufactoring_methods;;
-..some_name4 <- concept_edged;;
+rrel_example -> ( nrel_method_of_manufacture -> ( ..some_name5 => ..some_name4 ) );;
+..some_name5 <- concept_homemade;;
+..some_name4 <- concept_katana;;

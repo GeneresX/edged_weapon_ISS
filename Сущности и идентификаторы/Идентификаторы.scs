@@ -1,4 +1,8 @@
 /*edged weapon types by appointment*/
+nrel_method_of_manufacture
+=>nrel_main_idtf:
+[Метод изгтовления*](* <-lang_ru;; *);
+
 concept_edged_weapon
 =>nrel_main_idtf:
 [Холодное оружие](* <-lang_ru;; *);
